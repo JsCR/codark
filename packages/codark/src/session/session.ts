@@ -473,7 +473,7 @@ export interface Interface {
   ) => Effect.Effect<Option.Option<SessionV1.WithParts>, NotFound>
 }
 
-export class Service extends Context.Service<Service, Interface>()("@opencode/Session") {}
+export class Service extends Context.Service<Service, Interface>()("@codark/Session") {}
 
 export const use = serviceUse(Service)
 

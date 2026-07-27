@@ -30,8 +30,8 @@ const configLayer = Layer.succeed(
 
 const flagsLayer = ConfigProvider.layer(
   ConfigProvider.fromUnknown({
-    OPENCODE_EXPERIMENTAL_FILEWATCHER: "true",
-    OPENCODE_EXPERIMENTAL_DISABLE_FILEWATCHER: "false",
+    CODARK_EXPERIMENTAL_FILEWATCHER: "true",
+    CODARK_EXPERIMENTAL_DISABLE_FILEWATCHER: "false",
   }),
 )
 

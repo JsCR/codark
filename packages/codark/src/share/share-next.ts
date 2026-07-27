@@ -20,7 +20,7 @@ import { ProviderV2 } from "@codark-ai/core/provider"
 import { ModelV2 } from "@codark-ai/core/model"
 import { EventV2 } from "@codark-ai/core/event"
 
-const disabled = process.env["OPENCODE_DISABLE_SHARE"] === "true" || process.env["OPENCODE_DISABLE_SHARE"] === "1"
+const disabled = process.env["CODARK_DISABLE_SHARE"] === "true" || process.env["CODARK_DISABLE_SHARE"] === "1"
 
 export type Api = {
   create: string
@@ -78,7 +78,7 @@ export interface Interface {
   readonly remove: (sessionID: SessionID) => Effect.Effect<void, unknown>
 }
 
-export class Service extends Context.Service<Service, Interface>()("@opencode/ShareNext") {}
+export class Service extends Context.Service<Service, Interface>()("@codark/ShareNext") {}
 
 export const use = serviceUse(Service)
 

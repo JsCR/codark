@@ -47,7 +47,7 @@ export interface Interface {
   readonly mcp: (agent: Agent.Info, permission?: PermissionV1.Ruleset) => Effect.Effect<string | undefined>
 }
 
-export class Service extends Context.Service<Service, Interface>()("@opencode/SystemPrompt") {}
+export class Service extends Context.Service<Service, Interface>()("@codark/SystemPrompt") {}
 
 const layer = Layer.effect(
   Service,
