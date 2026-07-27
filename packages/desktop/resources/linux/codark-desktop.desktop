@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=OpenCode
-Exec=/opt/OpenCode/ai.codark.desktop %U
+Name=Codark
+Exec=/opt/Codark/ai.codark.desktop %U
 Terminal=false
 Type=Application
 Icon=ai.codark.desktop
