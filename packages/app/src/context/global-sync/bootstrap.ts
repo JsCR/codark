@@ -8,7 +8,7 @@ import type {
   QuestionRequest,
   ReferenceInfo,
   Session,
-} from "@opencode-ai/sdk/v2/client"
+} from "@codark-ai/sdk/v2/client"
 import type {
   AgentListInput,
   AgentListOutput,

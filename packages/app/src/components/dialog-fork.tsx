@@ -8,7 +8,7 @@ import { Dialog } from "@codark-ai/ui/dialog"
 import { List } from "@codark-ai/ui/list"
 import { showToast } from "@/utils/toast"
 import { extractPromptFromParts } from "@/utils/prompt"
-import type { TextPart as SDKTextPart } from "@opencode-ai/sdk/v2/client"
+import type { TextPart as SDKTextPart } from "@codark-ai/sdk/v2/client"
 import { base64Encode } from "@opencode-ai/core/util/encode"
 import { useLanguage } from "@/context/language"
 

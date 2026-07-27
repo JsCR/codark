@@ -1,4 +1,4 @@
-import type { FileNode } from "@opencode-ai/sdk/v2"
+import type { FileNode } from "@codark-ai/sdk/v2"
 
 type WatcherEvent = {
   type: string

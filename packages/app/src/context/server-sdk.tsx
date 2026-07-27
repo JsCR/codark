@@ -1,5 +1,5 @@
 import type { OpenCodeEvent } from "@opencode-ai/client/promise"
-import type { Event } from "@opencode-ai/sdk/v2/client"
+import type { Event } from "@codark-ai/sdk/v2/client"
 import { createSimpleContext } from "@codark-ai/ui/context"
 import { createGlobalEmitter } from "@solid-primitives/event-bus"
 import { makeEventListener } from "@solid-primitives/event-listener"

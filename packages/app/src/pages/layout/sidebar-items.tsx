@@ -1,4 +1,4 @@
-import type { Session } from "@opencode-ai/sdk/v2/client"
+import type { Session } from "@codark-ai/sdk/v2/client"
 import { Avatar } from "@codark-ai/ui/avatar"
 import { Icon } from "@codark-ai/ui/icon"
 import { Icon as IconV2 } from "@codark-ai/ui/v2/icon"

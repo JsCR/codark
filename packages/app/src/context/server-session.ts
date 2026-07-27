@@ -10,7 +10,7 @@ import type {
   Session,
   SessionStatus,
   Todo,
-} from "@opencode-ai/sdk/v2/client"
+} from "@codark-ai/sdk/v2/client"
 import type { FileDiffInfo } from "@opencode-ai/client/promise"
 import { batch } from "solid-js"
 import { createStore, produce, reconcile } from "solid-js/store"

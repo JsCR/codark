@@ -1,4 +1,4 @@
-import type { Session } from "@opencode-ai/sdk/v2/client"
+import type { Session } from "@codark-ai/sdk/v2/client"
 import { createSimpleContext } from "@codark-ai/ui/context"
 import { createStore, produce } from "solid-js/store"
 import { Persist, persisted, removePersisted, draftPersistedKeys } from "@/utils/persist"

@@ -12,7 +12,7 @@ import type {
   ToolPart,
   ToolState,
   UserMessage,
-} from "@opencode-ai/sdk/v2/client"
+} from "@codark-ai/sdk/v2/client"
 import { expect, type Page } from "@playwright/test"
 import { Schema } from "effect"
 import { mockOpenCodeServer } from "../../utils/mock-server"

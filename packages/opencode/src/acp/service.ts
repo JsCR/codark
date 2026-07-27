@@ -31,7 +31,7 @@ import {
 } from "@agentclientprotocol/sdk"
 import { InstallationVersion } from "@opencode-ai/core/installation/version"
 import { AppNodeBuilder } from "@opencode-ai/core/effect/app-node-builder"
-import type { AssistantMessage, Message, OpencodeClient, SessionMessageResponse } from "@opencode-ai/sdk/v2"
+import type { AssistantMessage, Message, OpencodeClient, SessionMessageResponse } from "@codark-ai/sdk/v2"
 import { Context, Effect, Layer, ManagedRuntime } from "effect"
 import * as ACPError from "./error"
 import { buildConfigOptions, parseModelSelection } from "./config-option"

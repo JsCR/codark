@@ -1,5 +1,5 @@
 import { createEffect, createMemo, createSignal, on, onCleanup, Show } from "solid-js"
-import type { SessionStatus } from "@opencode-ai/sdk/v2/client"
+import type { SessionStatus } from "@codark-ai/sdk/v2/client"
 import { useI18n } from "@codark-ai/ui/context/i18n"
 import { Card } from "@codark-ai/ui/card"
 import { Tooltip } from "@codark-ai/ui/tooltip"

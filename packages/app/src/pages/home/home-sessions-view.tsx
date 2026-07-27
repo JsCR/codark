@@ -1,4 +1,4 @@
-import type { Session } from "@opencode-ai/sdk/v2/client"
+import type { Session } from "@codark-ai/sdk/v2/client"
 import { type Accessor, createMemo, For, Show } from "solid-js"
 import { Spinner } from "@codark-ai/ui/spinner"
 import { ScrollView } from "@codark-ai/ui/scroll-view"

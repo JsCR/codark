@@ -8,7 +8,7 @@ This document describes the agreed target design for the V2 plugin system. It is
 
 - Internal and external plugins use the same public plugin API.
 - Effect plugins import `@opencode-ai/plugin/v2/effect`, not `@opencode-ai/core`.
-- Public domain values use generated `@opencode-ai/sdk` types.
+- Public domain values use generated `@codark-ai/sdk` types.
 - Core may retain branded IDs, decoded Effect schemas, and internal service types.
 - Plugins may register replayable domain transforms and runtime hooks imperatively during setup.
 - Registrations are scoped, independently disposable, ordered, and removable.

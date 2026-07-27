@@ -81,7 +81,7 @@ import { promptDesignPlaceholder, promptPlaceholder } from "./prompt-input/place
 import { createPromptInputTransientState } from "./prompt-input/transient-state"
 import { showToast } from "@/utils/toast"
 import { ImagePreview } from "@codark-ai/ui/image-preview"
-import type { ReferenceInfo } from "@opencode-ai/sdk/v2/client"
+import type { ReferenceInfo } from "@codark-ai/sdk/v2/client"
 
 export { createPromptInputHistory }
 export type { PromptInputControls, PromptInputHistory, PromptInputProps, PromptInputState, PromptInputSubmission }

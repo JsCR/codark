@@ -1,4 +1,4 @@
-import type { FilePart, Project, UserMessage, VcsFileDiff } from "@opencode-ai/sdk/v2"
+import type { FilePart, Project, UserMessage, VcsFileDiff } from "@codark-ai/sdk/v2"
 import { getFilename } from "@opencode-ai/core/util/path"
 import { useDialog } from "@codark-ai/ui/context/dialog"
 import { createQuery, skipToken, useMutation, useQueryClient } from "@tanstack/solid-query"

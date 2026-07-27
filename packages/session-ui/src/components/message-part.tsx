@@ -30,7 +30,7 @@ import {
   Todo,
   QuestionAnswer,
   QuestionInfo,
-} from "@opencode-ai/sdk/v2"
+} from "@codark-ai/sdk/v2"
 import { useData } from "../context"
 import { useFileComponent } from "@codark-ai/ui/context/file"
 import { useDialog } from "@codark-ai/ui/context/dialog"

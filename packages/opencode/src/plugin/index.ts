@@ -7,7 +7,7 @@ import type {
   WorkspaceAdapter as PluginWorkspaceAdapter,
 } from "@opencode-ai/plugin"
 import { Config } from "@/config/config"
-import { createOpencodeClient } from "@opencode-ai/sdk"
+import { createOpencodeClient } from "@codark-ai/sdk"
 import { ServerAuth } from "@/server/auth"
 import { CodexAuthPlugin } from "./openai/codex"
 import { Session } from "@/session/session"

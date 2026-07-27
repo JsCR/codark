@@ -1,4 +1,4 @@
-import { UserMessage } from "@opencode-ai/sdk/v2"
+import { UserMessage } from "@codark-ai/sdk/v2"
 import { HoverCard } from "@kobalte/core/hover-card"
 import { ComponentProps, For, Match, Show, createSignal, splitProps, Switch } from "solid-js"
 import { DiffChanges } from "@codark-ai/ui/diff-changes"

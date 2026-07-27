@@ -1,4 +1,4 @@
-import type { Event } from "@opencode-ai/sdk/v2"
+import type { Event } from "@codark-ai/sdk/v2"
 import { useSDK } from "./sdk"
 
 type EventMetadata = {
