@@ -313,6 +313,7 @@
         "@ai-sdk/vercel": "2.0.39",
         "@ai-sdk/xai": "3.0.102",
         "@aws-sdk/credential-providers": "3.1057.0",
+        "@codark-ai/effect-sqlite-node": "workspace:*",
         "@effect/opentelemetry": "catalog:",
         "@effect/platform-node": "catalog:",
         "@effect/sql-sqlite-bun": "catalog:",
@@ -321,7 +322,6 @@
         "@npmcli/arborist": "9.4.0",
         "@npmcli/config": "10.8.1",
         "@opencode-ai/effect-drizzle-sqlite": "workspace:*",
-        "@opencode-ai/effect-sqlite-node": "workspace:*",
         "@opencode-ai/llm": "workspace:*",
         "@opencode-ai/plugin": "workspace:*",
         "@opencode-ai/schema": "workspace:*",
@@ -448,7 +448,7 @@
       },
     },
     "packages/effect-sqlite-node": {
-      "name": "@opencode-ai/effect-sqlite-node",
+      "name": "@codark-ai/effect-sqlite-node",
       "version": "1.18.5",
       "dependencies": {
         "effect": "catalog:",
@@ -1476,6 +1476,8 @@
 
     "@codark-ai/codemode": ["@codark-ai/codemode@workspace:packages/codemode"],
 
+    "@codark-ai/effect-sqlite-node": ["@codark-ai/effect-sqlite-node@workspace:packages/effect-sqlite-node"],
+
     "@codark-ai/function": ["@codark-ai/function@workspace:packages/function"],
 
     "@codark-ai/web": ["@codark-ai/web@workspace:packages/web"],
@@ -1973,8 +1975,6 @@
     "@opencode-ai/desktop": ["@opencode-ai/desktop@workspace:packages/desktop"],
 
     "@opencode-ai/effect-drizzle-sqlite": ["@opencode-ai/effect-drizzle-sqlite@workspace:packages/effect-drizzle-sqlite"],
-
-    "@opencode-ai/effect-sqlite-node": ["@opencode-ai/effect-sqlite-node@workspace:packages/effect-sqlite-node"],
 
     "@opencode-ai/enterprise": ["@opencode-ai/enterprise@workspace:packages/enterprise"],
 
