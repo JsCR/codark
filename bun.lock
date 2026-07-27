@@ -853,7 +853,7 @@
       },
     },
     "packages/stats/app": {
-      "name": "@opencode-ai/stats-app",
+      "name": "@codark-ai/stats-app",
       "version": "1.18.5",
       "dependencies": {
         "@codark-ai/stats-core": "workspace:*",
@@ -1524,6 +1524,8 @@
 
     "@codark-ai/slack": ["@codark-ai/slack@workspace:packages/slack"],
 
+    "@codark-ai/stats-app": ["@codark-ai/stats-app@workspace:packages/stats/app"],
+
     "@codark-ai/stats-core": ["@codark-ai/stats-core@workspace:packages/stats/core"],
 
     "@codark-ai/stats-server": ["@codark-ai/stats-server@workspace:packages/stats/server"],
@@ -2007,8 +2009,6 @@
     "@opencode-ai/cli": ["@opencode-ai/cli@workspace:packages/cli"],
 
     "@opencode-ai/desktop": ["@opencode-ai/desktop@workspace:packages/desktop"],
-
-    "@opencode-ai/stats-app": ["@opencode-ai/stats-app@workspace:packages/stats/app"],
 
     "@opencode-ai/storybook": ["@opencode-ai/storybook@workspace:packages/storybook"],
 
