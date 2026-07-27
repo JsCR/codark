@@ -5,7 +5,7 @@ import type {
   Plugin as PluginInstance,
   PluginModule,
   WorkspaceAdapter as PluginWorkspaceAdapter,
-} from "@opencode-ai/plugin"
+} from "@codark-ai/plugin"
 import { Config } from "@/config/config"
 import { createOpencodeClient } from "@codark-ai/sdk"
 import { ServerAuth } from "@/server/auth"

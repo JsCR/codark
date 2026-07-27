@@ -238,7 +238,7 @@ const layer = Layer.effect(
           .install(dir, {
             add: [
               {
-                name: "@opencode-ai/plugin",
+                name: "@codark-ai/plugin",
                 version: InstallationLocal ? undefined : InstallationVersion,
               },
             ],

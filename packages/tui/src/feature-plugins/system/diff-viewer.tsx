@@ -1,5 +1,5 @@
 /** @jsxImportSource @opentui/solid */
-import type { TuiPlugin, TuiPluginApi, TuiRouteCurrent } from "@opencode-ai/plugin/tui"
+import type { TuiPlugin, TuiPluginApi, TuiRouteCurrent } from "@codark-ai/plugin/tui"
 import type { SnapshotFileDiff, VcsFileDiff } from "@codark-ai/sdk/v2"
 import {
   TextAttributes,

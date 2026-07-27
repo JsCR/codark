@@ -1,5 +1,5 @@
 import type { Event } from "@codark-ai/sdk/v2"
-import type { TuiAttentionSoundName, TuiPlugin, TuiPluginApi } from "@opencode-ai/plugin/tui"
+import type { TuiAttentionSoundName, TuiPlugin, TuiPluginApi } from "@codark-ai/plugin/tui"
 import type { BuiltinTuiPlugin } from "../builtins"
 
 const id = "internal:notifications"

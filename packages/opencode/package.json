@@ -86,7 +86,7 @@
     "@openauthjs/openauth": "catalog:",
     "@codark-ai/codemode": "workspace:*",
     "@codark-ai/llm": "workspace:*",
-    "@opencode-ai/plugin": "workspace:*",
+    "@codark-ai/plugin": "workspace:*",
     "@codark-ai/protocol": "workspace:*",
     "@codark-ai/schema": "workspace:*",
     "@codark-ai/script": "workspace:*",

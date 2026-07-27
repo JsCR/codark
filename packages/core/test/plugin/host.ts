@@ -1,4 +1,4 @@
-import type { PluginContext } from "@opencode-ai/plugin/v2/effect"
+import type { PluginContext } from "@codark-ai/plugin/v2/effect"
 import { AgentV2 } from "@opencode-ai/core/agent"
 import { Catalog } from "@opencode-ai/core/catalog"
 import { Credential } from "@opencode-ai/core/credential"
