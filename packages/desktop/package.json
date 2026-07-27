@@ -1,7 +1,7 @@
 {
   "name": "@codark-ai/desktop",
   "private": true,
-  "version": "1.18.5",
+  "version": "1.18.7",
   "type": "module",
   "license": "MIT",
   "homepage": "https://opencode.ai",
