@@ -1,5 +1,5 @@
-import { HttpRecorder } from "@opencode-ai/http-recorder"
-import { HttpRecorderInternal } from "@opencode-ai/http-recorder/internal"
+import { HttpRecorder } from "@codark-ai/http-recorder"
+import { HttpRecorderInternal } from "@codark-ai/http-recorder/internal"
 import * as OpenAIChat from "@opencode-ai/llm/protocols/openai-chat"
 import { Auth, LLMClient, RequestExecutor } from "@opencode-ai/llm/route"
 import { Database } from "@opencode-ai/core/database/database"

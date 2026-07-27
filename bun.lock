@@ -358,7 +358,7 @@
         "zod": "catalog:",
       },
       "devDependencies": {
-        "@opencode-ai/http-recorder": "workspace:*",
+        "@codark-ai/http-recorder": "workspace:*",
         "@parcel/watcher-darwin-arm64": "2.5.1",
         "@parcel/watcher-darwin-x64": "2.5.1",
         "@parcel/watcher-linux-arm64-glibc": "2.5.1",
@@ -508,7 +508,7 @@
       },
     },
     "packages/http-recorder": {
-      "name": "@opencode-ai/http-recorder",
+      "name": "@codark-ai/http-recorder",
       "version": "1.18.5",
       "dependencies": {
         "@effect/platform-node": "4.0.0-beta.83",
@@ -550,8 +550,8 @@
       },
       "devDependencies": {
         "@clack/prompts": "1.0.0-alpha.1",
+        "@codark-ai/http-recorder": "workspace:*",
         "@effect/platform-node": "catalog:",
-        "@opencode-ai/http-recorder": "workspace:*",
         "@tsconfig/bun": "catalog:",
         "@types/bun": "catalog:",
         "@typescript/native-preview": "catalog:",
@@ -666,9 +666,9 @@
       },
       "devDependencies": {
         "@babel/core": "7.28.4",
+        "@codark-ai/http-recorder": "workspace:*",
         "@octokit/webhooks-types": "7.6.1",
         "@opencode-ai/core": "workspace:*",
-        "@opencode-ai/http-recorder": "workspace:*",
         "@opencode-ai/script": "workspace:*",
         "@standard-schema/spec": "1.0.0",
         "@tsconfig/bun": "catalog:",
@@ -1484,6 +1484,8 @@
 
     "@codark-ai/function": ["@codark-ai/function@workspace:packages/function"],
 
+    "@codark-ai/http-recorder": ["@codark-ai/http-recorder@workspace:packages/http-recorder"],
+
     "@codark-ai/httpapi-codegen": ["@codark-ai/httpapi-codegen@workspace:packages/httpapi-codegen"],
 
     "@codark-ai/stats-core": ["@codark-ai/stats-core@workspace:packages/stats/core"],
@@ -1981,8 +1983,6 @@
     "@opencode-ai/desktop": ["@opencode-ai/desktop@workspace:packages/desktop"],
 
     "@opencode-ai/enterprise": ["@opencode-ai/enterprise@workspace:packages/enterprise"],
-
-    "@opencode-ai/http-recorder": ["@opencode-ai/http-recorder@workspace:packages/http-recorder"],
 
     "@opencode-ai/llm": ["@opencode-ai/llm@workspace:packages/llm"],
 
