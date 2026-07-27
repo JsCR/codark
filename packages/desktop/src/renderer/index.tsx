@@ -13,8 +13,8 @@ import {
   ServerConnection,
   useCommand,
   useWslServers,
-} from "@opencode-ai/app"
-import type { UpdaterState } from "@opencode-ai/app/updater"
+} from "@codark-ai/app"
+import type { UpdaterState } from "@codark-ai/app/updater"
 import * as Sentry from "@sentry/solid"
 import type { AsyncStorage } from "@solid-primitives/storage"
 import { createMemoryHistory, MemoryRouter, type BaseRouterProps } from "@solidjs/router"
