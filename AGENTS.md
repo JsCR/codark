@@ -4,6 +4,15 @@
 - The default branch in this repo is `dev`.
 - Local `main` ref may not exist; use `dev` or `origin/dev` for diffs.
 
+## Code Intelligence (MCP)
+
+This repo is indexed by two MCP services. Prefer them over `grep`/`find` for code exploration:
+
+- `codegraph` (LSP-grade): use `codegraph_search`/`codegraph_node` to find symbol definitions, `codegraph_callers`/`codegraph_callees` for call chains, `codegraph_explore` to survey an area before editing, `codegraph_impact` for blast-radius analysis.
+- `codebase-memory` (knowledge graph): use `search_graph`/`search_code` for BM25 and semantic search, `get_architecture` for module overview, `trace_path` for caller/impact/data-flow tracing, `query_graph` for multi-hop patterns.
+
+Reach for these first when locating symbols, tracing call paths, or assessing the impact of a change. Fall back to Grep/Glob/Read only when the MCP tools return nothing useful, when you need raw file contents rather than structure, or when the tools are unavailable. Note the indexes can lag the working tree; re-index (`index_repository`) after large structural changes.
+
 ## Branch Names
 
 Use a short branch name of at most three words, separated by hyphens. Do not use slashes or type prefixes such as `feat/` or `fix/`.
