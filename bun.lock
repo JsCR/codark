@@ -162,12 +162,12 @@
       "dependencies": {
         "@cloudflare/vite-plugin": "1.15.2",
         "@codark-ai/console-mail": "workspace:*",
+        "@codark-ai/console-resource": "workspace:*",
         "@ibm/plex": "6.4.1",
         "@jsx-email/render": "1.1.1",
         "@kobalte/core": "catalog:",
         "@openauthjs/openauth": "catalog:",
         "@opencode-ai/console-core": "workspace:*",
-        "@opencode-ai/console-resource": "workspace:*",
         "@opencode-ai/ui": "workspace:*",
         "@smithy/eventstream-codec": "4.2.7",
         "@smithy/util-utf8": "4.2.0",
@@ -198,8 +198,8 @@
       "dependencies": {
         "@aws-sdk/client-sts": "3.782.0",
         "@codark-ai/console-mail": "workspace:*",
+        "@codark-ai/console-resource": "workspace:*",
         "@jsx-email/render": "1.1.1",
-        "@opencode-ai/console-resource": "workspace:*",
         "@planetscale/database": "1.19.0",
         "aws4fetch": "1.0.20",
         "drizzle-orm": "catalog:",
@@ -226,9 +226,9 @@
         "@ai-sdk/anthropic": "3.0.82",
         "@ai-sdk/openai": "3.0.48",
         "@ai-sdk/openai-compatible": "2.0.37",
+        "@codark-ai/console-resource": "workspace:*",
         "@openauthjs/openauth": "0.0.0-20250322224806",
         "@opencode-ai/console-core": "workspace:*",
-        "@opencode-ai/console-resource": "workspace:*",
         "ai": "catalog:",
         "zod": "catalog:",
       },
@@ -254,7 +254,7 @@
       },
     },
     "packages/console/resource": {
-      "name": "@opencode-ai/console-resource",
+      "name": "@codark-ai/console-resource",
       "dependencies": {
         "@cloudflare/workers-types": "catalog:",
       },
@@ -1478,6 +1478,8 @@
 
     "@codark-ai/console-mail": ["@codark-ai/console-mail@workspace:packages/console/mail"],
 
+    "@codark-ai/console-resource": ["@codark-ai/console-resource@workspace:packages/console/resource"],
+
     "@codark-ai/effect-drizzle-sqlite": ["@codark-ai/effect-drizzle-sqlite@workspace:packages/effect-drizzle-sqlite"],
 
     "@codark-ai/effect-sqlite-node": ["@codark-ai/effect-sqlite-node@workspace:packages/effect-sqlite-node"],
@@ -1975,8 +1977,6 @@
     "@opencode-ai/console-core": ["@opencode-ai/console-core@workspace:packages/console/core"],
 
     "@opencode-ai/console-function": ["@opencode-ai/console-function@workspace:packages/console/function"],
-
-    "@opencode-ai/console-resource": ["@opencode-ai/console-resource@workspace:packages/console/resource"],
 
     "@opencode-ai/console-support": ["@opencode-ai/console-support@workspace:packages/console/support"],
 

@@ -18,7 +18,7 @@
     "@openauthjs/openauth": "catalog:",
     "@opencode-ai/console-core": "workspace:*",
     "@codark-ai/console-mail": "workspace:*",
-    "@opencode-ai/console-resource": "workspace:*",
+    "@codark-ai/console-resource": "workspace:*",
     "@opencode-ai/ui": "workspace:*",
     "@smithy/eventstream-codec": "4.2.7",
     "@smithy/util-utf8": "4.2.0",

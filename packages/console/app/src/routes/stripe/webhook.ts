@@ -6,7 +6,7 @@ import { BillingTable, LiteTable, PaymentTable } from "@opencode-ai/console-core
 import { Identifier } from "@opencode-ai/console-core/identifier.js"
 import { centsToMicroCents } from "@opencode-ai/console-core/util/price.js"
 import { Actor } from "@opencode-ai/console-core/actor.js"
-import { Resource } from "@opencode-ai/console-resource"
+import { Resource } from "@codark-ai/console-resource"
 import { LiteData } from "@opencode-ai/console-core/lite.js"
 import { BlackData } from "@opencode-ai/console-core/black.js"
 import { Referral } from "@opencode-ai/console-core/referral.js"
