@@ -92,7 +92,7 @@
     "@codark-ai/script": "workspace:*",
     "@codark-ai/sdk": "workspace:*",
     "@codark-ai/server": "workspace:*",
-    "@opencode-ai/tui": "workspace:*",
+    "@codark-ai/tui": "workspace:*",
     "@openrouter/ai-sdk-provider": "2.9.0",
     "@opentelemetry/api": "1.9.0",
     "@opentelemetry/context-async-hooks": "2.6.1",

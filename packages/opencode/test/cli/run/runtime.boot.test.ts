@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, mock, spyOn, test } from "bun:test"
 import { OpencodeClient, type Provider } from "@codark-ai/sdk/v2"
-import type { Resolved } from "@opencode-ai/tui/config"
+import type { Resolved } from "@codark-ai/tui/config"
 import { TuiConfig } from "@/config/tui"
 import { resolveDiffStyle, resolveModelInfo, resolveRunTuiConfig } from "@/cli/cmd/run/runtime.boot"
 import { createTuiResolvedConfig } from "../../fixture/tui-runtime"

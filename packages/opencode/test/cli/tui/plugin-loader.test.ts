@@ -12,7 +12,7 @@ import { TuiConfig } from "../../../src/config/tui"
 import { Filesystem } from "@/util/filesystem"
 import { PluginLoader } from "../../../src/plugin/loader"
 
-const { allThemes, addTheme } = await import("@opencode-ai/tui/context/theme")
+const { allThemes, addTheme } = await import("@codark-ai/tui/context/theme")
 const { TuiPluginRuntime } = await import("../../../src/plugin/tui/runtime")
 
 type Row = Record<string, unknown>

@@ -1,5 +1,5 @@
-import { run } from "@opencode-ai/tui"
-import { TuiConfig } from "@opencode-ai/tui/config"
+import { run } from "@codark-ai/tui"
+import { TuiConfig } from "@codark-ai/tui/config"
 import { Effect } from "effect"
 import { AppNodeBuilder } from "@codark-ai/core/effect/app-node-builder"
 import { Global } from "@codark-ai/core/global"

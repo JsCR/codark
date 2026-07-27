@@ -20,7 +20,7 @@
     "@codark-ai/core": "workspace:*",
     "@codark-ai/sdk": "workspace:*",
     "@codark-ai/server": "workspace:*",
-    "@opencode-ai/tui": "workspace:*",
+    "@codark-ai/tui": "workspace:*",
     "@opentui/core": "catalog:",
     "@opentui/solid": "catalog:",
     "@parcel/watcher": "2.5.1",

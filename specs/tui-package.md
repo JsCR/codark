@@ -10,14 +10,14 @@ Target package:
 
 ```text
 packages/tui
-name: @opencode-ai/tui
+name: @codark-ai/tui
 ```
 
 Target dependency graph:
 
 ```text
 packages/opencode ---\
-                      > @opencode-ai/tui -> @codark-ai/sdk
+                      > @codark-ai/tui -> @codark-ai/sdk
 packages/cli --------/
 ```
 
@@ -49,11 +49,11 @@ implementation modules.
   checks over `unknown` input and metadata are acceptable; importing backend
   tool implementations for type safety is not.
 - Keep legacy CLI command parsing, server startup, worker management,
-  authentication, and config discovery outside `@opencode-ai/tui`.
+  authentication, and config discovery outside `@codark-ai/tui`.
 
 ## Ownership Boundary
 
-### `@opencode-ai/tui` Owns
+### `@codark-ai/tui` Owns
 
 - OpenTUI renderer lifecycle shared by both CLI hosts
 - Solid application composition
@@ -118,7 +118,7 @@ the application root.
 
 ## Section 1: Create The Package Skeleton
 
-Status: Completed. The private `@opencode-ai/tui` workspace package now has an
+Status: Completed. The private `@codark-ai/tui` workspace package now has an
 independent OpenTUI Solid JSX configuration, narrow root export, package-local
 alias, and in-memory render smoke test. Neither CLI consumes the package yet.
 
@@ -126,7 +126,7 @@ Create `packages/tui` without moving the application root yet.
 
 Tasks:
 
-- Add `packages/tui/package.json` with the name `@opencode-ai/tui`.
+- Add `packages/tui/package.json` with the name `@codark-ai/tui`.
 - Add a package `tsconfig.json` configured for OpenTUI Solid JSX.
 - Add `bunfig.toml` with the OpenTUI Solid preload for package-local development
   and tests.
@@ -157,7 +157,7 @@ feat(tui): add standalone package skeleton
 
 Status: Completed. Presentation utilities, bundled themes and their pure theme
 engine, keybinding/keymap mechanics, and low-coupling border, link, and spinner
-primitives now live in `@opencode-ai/tui`. The legacy host consumes explicit
+primitives now live in `@codark-ai/tui`. The legacy host consumes explicit
 package exports and retains only integration wrappers or compatibility
 re-exports where backend and process concerns have not moved yet.
 
@@ -235,7 +235,7 @@ refactor(tui): decouple tool rendering from backend tools
 
 Status: Completed for the shared runtime contract and legacy host. The TUI now
 receives immutable launch-directory, path, capability, terminal/editor, startup,
-and build inputs through `@opencode-ai/tui/runtime`. Movable app, component,
+and build inputs through `@codark-ai/tui/runtime`. Movable app, component,
 route, and feature-plugin code no longer reads OpenCode globals or process state;
 command, config, plugin-loading, custom-theme discovery, editor/clipboard, and
 Windows lifecycle adapters remain host-owned. `packages/cli` does not consume
@@ -298,7 +298,7 @@ refactor(tui): make runtime capabilities explicit
 ## Section 5: Separate Resolved TUI Config From Host Config Loading
 
 Status: Completed for the package config contract and legacy host adapter.
-`@opencode-ai/tui/config` now owns schemas, defaults, keybind resolution, the
+`@codark-ai/tui/config` now owns schemas, defaults, keybind resolution, the
 resolved config type, and the Solid config provider. The legacy host retains
 file discovery, precedence, JSONC parsing, substitutions, migration,
 source-relative sound paths, plugin origins, dependency installation, and
@@ -338,7 +338,7 @@ refactor(tui): separate config resolution from loading
 
 Status: Completed for the SDK/domain boundary. SDK, project, event, legacy sync,
 V2 sync, local model state, prompt persistence, and pure prompt helpers are now
-canonical in `@opencode-ai/tui`. Configured references resolve through the new
+canonical in `@codark-ai/tui`. Configured references resolve through the new
 generated `reference.list` SDK operation; prompt payloads rely on optional
 server-assigned IDs; local attachment reads use the package platform contract.
 Legacy route files remain in place until the plugin slot boundary and app-root
@@ -394,7 +394,7 @@ refactor(tui): move sdk state and routes into package
 
 Status: Completed. Plugin slots, route registration, TUI-facing APIs, runtime
 presentation state, and built-in feature plugins now live in
-`@opencode-ai/tui`. The legacy host injects a narrow plugin host that retains
+`@codark-ai/tui`. The legacy host injects a narrow plugin host that retains
 discovery, installation, manifest/config mutation, external module execution,
 pure-mode filtering, and cleanup ownership. Missing or failing plugin hosts
 degrade to the base TUI without blocking startup.
@@ -484,7 +484,7 @@ refactor(tui): move application root into package
 ## Section 9: Convert Both CLIs To Thin Adapters
 
 Status: Completed. The legacy thread and attach commands now lazily invoke the
-public `@opencode-ai/tui` root while retaining worker/server/config/plugin and
+public `@codark-ai/tui` root while retaining worker/server/config/plugin and
 process adapters. The new CLI default command launches the same package against
 its authenticated daemon transport with a minimal local platform/host. Missing
 legacy provider/config APIs currently degrade to the shared provider-connect
@@ -499,7 +499,7 @@ Tasks:
   `attach.ts` in `packages/opencode`.
 - Keep the legacy embedded worker and server startup in `packages/opencode`.
 - Change those adapters to load config, create transport inputs, and call the
-  public `@opencode-ai/tui` API.
+  public `@codark-ai/tui` API.
 - Change `packages/cli`'s default command handler to call the same public API.
 - Remove the temporary `packages/cli/src/tui` shell after the shared package is
   integrated.
@@ -539,7 +539,7 @@ Tasks:
   transport setup, and config loading.
 - Remove obsolete `@tui/*` path mappings from `packages/opencode`.
 - Remove stale test fixtures and update all imports to package exports.
-- Narrow `@opencode-ai/tui` exports to intentional public entrypoints.
+- Narrow `@codark-ai/tui` exports to intentional public entrypoints.
 - Verify package manifests list every direct dependency and no accidental
   dependency is supplied only by workspace hoisting.
 - Update repository documentation describing TUI ownership and development.

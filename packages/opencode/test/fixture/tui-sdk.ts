@@ -1,5 +1,5 @@
 import type { GlobalEvent } from "@codark-ai/sdk/v2"
-import type { EventSource } from "@opencode-ai/tui/context/sdk"
+import type { EventSource } from "@codark-ai/tui/context/sdk"
 
 export const worktree = "/tmp/opencode"
 export const directory = `${worktree}/packages/opencode`
