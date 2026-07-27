@@ -906,7 +906,7 @@
       },
     },
     "packages/stats/server": {
-      "name": "@opencode-ai/stats-server",
+      "name": "@codark-ai/stats-server",
       "version": "1.18.5",
       "dependencies": {
         "@aws-sdk/client-firehose": "3.933.0",
@@ -1510,6 +1510,8 @@
 
     "@codark-ai/stats-core": ["@codark-ai/stats-core@workspace:packages/stats/core"],
 
+    "@codark-ai/stats-server": ["@codark-ai/stats-server@workspace:packages/stats/server"],
+
     "@codark-ai/ui": ["@codark-ai/ui@workspace:packages/ui"],
 
     "@codark-ai/web": ["@codark-ai/web@workspace:packages/web"],
@@ -2007,8 +2009,6 @@
     "@opencode-ai/session-ui": ["@opencode-ai/session-ui@workspace:packages/session-ui"],
 
     "@opencode-ai/stats-app": ["@opencode-ai/stats-app@workspace:packages/stats/app"],
-
-    "@opencode-ai/stats-server": ["@opencode-ai/stats-server@workspace:packages/stats/server"],
 
     "@opencode-ai/storybook": ["@opencode-ai/storybook@workspace:packages/storybook"],
 
