@@ -6,7 +6,7 @@ import { Watcher } from "@opencode-ai/core/filesystem/watcher"
 import { Git } from "@/git"
 import { EventV2Bridge } from "@/event-v2-bridge"
 import { EventV2 } from "@opencode-ai/core/event"
-import { VcsEvent } from "@opencode-ai/schema/vcs-event"
+import { VcsEvent } from "@codark-ai/schema/vcs-event"
 
 const PATCH_CONTEXT_LINES = 2_147_483_647
 const MAX_PATCH_BYTES = 10_000_000

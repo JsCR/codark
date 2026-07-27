@@ -15,7 +15,7 @@
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
-    "@opencode-ai/schema": "workspace:*",
+    "@codark-ai/schema": "workspace:*",
     "@opencode-ai/protocol": "workspace:*"
   },
   "peerDependencies": {

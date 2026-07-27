@@ -1,7 +1,7 @@
 import { base64Encode } from "@opencode-ai/core/util/encode"
-import { Event } from "@opencode-ai/schema/event"
-import { SessionStatusEvent } from "@opencode-ai/schema/session-status-event"
-import { SessionV1 } from "@opencode-ai/schema/session-v1"
+import { Event } from "@codark-ai/schema/event"
+import { SessionStatusEvent } from "@codark-ai/schema/session-status-event"
+import { SessionV1 } from "@codark-ai/schema/session-v1"
 import type {
   AssistantMessage,
   GlobalEvent,

@@ -88,7 +88,7 @@
     "@opencode-ai/llm": "workspace:*",
     "@opencode-ai/plugin": "workspace:*",
     "@opencode-ai/protocol": "workspace:*",
-    "@opencode-ai/schema": "workspace:*",
+    "@codark-ai/schema": "workspace:*",
     "@codark-ai/script": "workspace:*",
     "@opencode-ai/sdk": "workspace:*",
     "@opencode-ai/server": "workspace:*",

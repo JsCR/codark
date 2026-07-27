@@ -9,7 +9,7 @@ import { MCP } from "../mcp"
 import { Skill } from "../skill"
 import PROMPT_INITIALIZE from "./template/initialize.txt"
 import PROMPT_REVIEW from "./template/review.txt"
-import { LegacyEvent } from "@opencode-ai/schema/legacy-event"
+import { LegacyEvent } from "@codark-ai/schema/legacy-event"
 
 type State = {
   commands: Record<string, Info>

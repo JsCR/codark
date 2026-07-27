@@ -31,6 +31,7 @@
       "name": "@opencode-ai/app",
       "version": "1.18.5",
       "dependencies": {
+        "@codark-ai/schema": "workspace:*",
         "@corvu/drawer": "catalog:",
         "@dnd-kit/abstract": "0.5.0",
         "@dnd-kit/dom": "0.5.0",
@@ -39,7 +40,6 @@
         "@kobalte/core": "catalog:",
         "@opencode-ai/client": "file:vendor/opencode-ai-client-1.17.13-v2.tgz",
         "@opencode-ai/core": "workspace:*",
-        "@opencode-ai/schema": "workspace:*",
         "@opencode-ai/sdk": "workspace:*",
         "@opencode-ai/session-ui": "workspace:*",
         "@opencode-ai/ui": "workspace:*",
@@ -122,8 +122,8 @@
     "packages/client": {
       "name": "@opencode-ai/client",
       "dependencies": {
+        "@codark-ai/schema": "workspace:*",
         "@opencode-ai/protocol": "workspace:*",
-        "@opencode-ai/schema": "workspace:*",
       },
       "devDependencies": {
         "@codark-ai/httpapi-codegen": "workspace:*",
@@ -315,6 +315,7 @@
         "@aws-sdk/credential-providers": "3.1057.0",
         "@codark-ai/effect-drizzle-sqlite": "workspace:*",
         "@codark-ai/effect-sqlite-node": "workspace:*",
+        "@codark-ai/schema": "workspace:*",
         "@effect/opentelemetry": "catalog:",
         "@effect/platform-node": "catalog:",
         "@effect/sql-sqlite-bun": "catalog:",
@@ -324,7 +325,6 @@
         "@npmcli/config": "10.8.1",
         "@opencode-ai/llm": "workspace:*",
         "@opencode-ai/plugin": "workspace:*",
-        "@opencode-ai/schema": "workspace:*",
         "@openrouter/ai-sdk-provider": "2.9.0",
         "@opentelemetry/api": "1.9.0",
         "@opentelemetry/context-async-hooks": "2.6.1",
@@ -542,7 +542,7 @@
       "name": "@opencode-ai/llm",
       "version": "1.18.5",
       "dependencies": {
-        "@opencode-ai/schema": "workspace:*",
+        "@codark-ai/schema": "workspace:*",
         "@smithy/eventstream-codec": "4.2.14",
         "@smithy/util-utf8": "4.2.2",
         "aws4fetch": "1.0.20",
@@ -589,6 +589,7 @@
         "@aws-sdk/credential-providers": "3.1057.0",
         "@clack/prompts": "1.0.0-alpha.1",
         "@codark-ai/codemode": "workspace:*",
+        "@codark-ai/schema": "workspace:*",
         "@codark-ai/script": "workspace:*",
         "@effect/opentelemetry": "catalog:",
         "@effect/platform-node": "catalog:",
@@ -601,7 +602,6 @@
         "@opencode-ai/llm": "workspace:*",
         "@opencode-ai/plugin": "workspace:*",
         "@opencode-ai/protocol": "workspace:*",
-        "@opencode-ai/schema": "workspace:*",
         "@opencode-ai/sdk": "workspace:*",
         "@opencode-ai/server": "workspace:*",
         "@opencode-ai/tui": "workspace:*",
@@ -720,7 +720,7 @@
     "packages/protocol": {
       "name": "@opencode-ai/protocol",
       "dependencies": {
-        "@opencode-ai/schema": "workspace:*",
+        "@codark-ai/schema": "workspace:*",
         "effect": "catalog:",
       },
       "devDependencies": {
@@ -730,7 +730,7 @@
       },
     },
     "packages/schema": {
-      "name": "@opencode-ai/schema",
+      "name": "@codark-ai/schema",
       "dependencies": {
         "effect": "catalog:",
       },
@@ -1490,6 +1490,8 @@
 
     "@codark-ai/httpapi-codegen": ["@codark-ai/httpapi-codegen@workspace:packages/httpapi-codegen"],
 
+    "@codark-ai/schema": ["@codark-ai/schema@workspace:packages/schema"],
+
     "@codark-ai/script": ["@codark-ai/script@workspace:packages/script"],
 
     "@codark-ai/stats-core": ["@codark-ai/stats-core@workspace:packages/stats/core"],
@@ -1991,8 +1993,6 @@
     "@opencode-ai/plugin": ["@opencode-ai/plugin@workspace:packages/plugin"],
 
     "@opencode-ai/protocol": ["@opencode-ai/protocol@workspace:packages/protocol"],
-
-    "@opencode-ai/schema": ["@opencode-ai/schema@workspace:packages/schema"],
 
     "@opencode-ai/sdk": ["@opencode-ai/sdk@workspace:packages/sdk/js"],
 

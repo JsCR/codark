@@ -21,7 +21,7 @@ import { EventV2Bridge } from "@/event-v2-bridge"
 import { ProviderV2 } from "@opencode-ai/core/provider"
 import { ModelV2 } from "@opencode-ai/core/model"
 import { buildPrompt } from "@opencode-ai/core/session/compaction"
-import { SessionCompactionEvent } from "@opencode-ai/schema/session-compaction-event"
+import { SessionCompactionEvent } from "@codark-ai/schema/session-compaction-event"
 
 export const Event = SessionCompactionEvent
 

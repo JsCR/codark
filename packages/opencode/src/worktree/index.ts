@@ -16,7 +16,7 @@ import { ChildProcess } from "effect/unstable/process"
 import { FSUtil } from "@opencode-ai/core/fs-util"
 import { AppProcess } from "@opencode-ai/core/process"
 import { InstanceState } from "@/effect/instance-state"
-import { WorktreeEvent } from "@opencode-ai/schema/worktree-event"
+import { WorktreeEvent } from "@codark-ai/schema/worktree-event"
 
 export const Event = WorktreeEvent
 
