@@ -17,7 +17,7 @@
     "@kobalte/core": "catalog:",
     "@openauthjs/openauth": "catalog:",
     "@opencode-ai/console-core": "workspace:*",
-    "@opencode-ai/console-mail": "workspace:*",
+    "@codark-ai/console-mail": "workspace:*",
     "@opencode-ai/console-resource": "workspace:*",
     "@opencode-ai/ui": "workspace:*",
     "@smithy/eventstream-codec": "4.2.7",
