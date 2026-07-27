@@ -460,7 +460,7 @@
       },
     },
     "packages/enterprise": {
-      "name": "@opencode-ai/enterprise",
+      "name": "@codark-ai/enterprise",
       "version": "1.18.5",
       "dependencies": {
         "@codark-ai/core": "workspace:*",
@@ -1496,6 +1496,8 @@
 
     "@codark-ai/effect-sqlite-node": ["@codark-ai/effect-sqlite-node@workspace:packages/effect-sqlite-node"],
 
+    "@codark-ai/enterprise": ["@codark-ai/enterprise@workspace:packages/enterprise"],
+
     "@codark-ai/function": ["@codark-ai/function@workspace:packages/function"],
 
     "@codark-ai/http-recorder": ["@codark-ai/http-recorder@workspace:packages/http-recorder"],
@@ -2005,8 +2007,6 @@
     "@opencode-ai/cli": ["@opencode-ai/cli@workspace:packages/cli"],
 
     "@opencode-ai/desktop": ["@opencode-ai/desktop@workspace:packages/desktop"],
-
-    "@opencode-ai/enterprise": ["@opencode-ai/enterprise@workspace:packages/enterprise"],
 
     "@opencode-ai/stats-app": ["@opencode-ai/stats-app@workspace:packages/stats/app"],
 
