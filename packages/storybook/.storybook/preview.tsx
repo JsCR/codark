@@ -1,5 +1,5 @@
 import "@codark-ai/ui/styles/tailwind"
-import "@opencode-ai/session-ui/styles"
+import "@codark-ai/session-ui/styles"
 import "@codark-ai/ui/v2/styles/tailwind.css"
 
 import { createEffect, onCleanup, onMount } from "solid-js"

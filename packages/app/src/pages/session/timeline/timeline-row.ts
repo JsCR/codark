@@ -1,5 +1,5 @@
 import type { SnapshotFileDiff } from "@codark-ai/sdk/v2"
-import type { PartGroup } from "@opencode-ai/session-ui/message-part"
+import type { PartGroup } from "@codark-ai/session-ui/message-part"
 import { Data, Equal } from "effect"
 
 export type SummaryDiff = SnapshotFileDiff & { file: string }

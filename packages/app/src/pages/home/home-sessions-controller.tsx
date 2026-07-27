@@ -1,5 +1,5 @@
 import type { Session } from "@codark-ai/sdk/v2/client"
-import { preloadMarkdown } from "@opencode-ai/session-ui/markdown-cache"
+import { preloadMarkdown } from "@codark-ai/session-ui/markdown-cache"
 import { useDialog } from "@codark-ai/ui/context/dialog"
 import { useMarked } from "@codark-ai/ui/context/marked"
 import { useQuery } from "@tanstack/solid-query"

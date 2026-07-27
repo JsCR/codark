@@ -2,12 +2,12 @@ import { createEffect, onCleanup, type JSX } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import type { SnapshotFileDiff, VcsFileDiff } from "@codark-ai/sdk/v2"
 import type { FileDiffInfo } from "@codark-ai/client/promise"
-import { SessionReview } from "@opencode-ai/session-ui/session-review"
+import { SessionReview } from "@codark-ai/session-ui/session-review"
 import type {
   SessionReviewCommentActions,
   SessionReviewCommentDelete,
   SessionReviewCommentUpdate,
-} from "@opencode-ai/session-ui/session-review"
+} from "@codark-ai/session-ui/session-review"
 import type { SelectedLineRange } from "@/context/file"
 import { useSDK } from "@/context/sdk"
 import { useLayout } from "@/context/layout"

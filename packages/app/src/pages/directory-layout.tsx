@@ -1,4 +1,4 @@
-import { DataProvider } from "@opencode-ai/session-ui/context"
+import { DataProvider } from "@codark-ai/session-ui/context"
 import { showToast } from "@/utils/toast"
 import { base64Encode } from "@codark-ai/core/util/encode"
 import { useLocation, useNavigate, useParams } from "@solidjs/router"

@@ -4,7 +4,7 @@ import type { ServerConnection } from "@/context/server"
 import { displayName, getProjectAvatarSource } from "@/pages/layout/helpers"
 import { useSessionTabAvatarState } from "@/pages/layout/project-avatar-state"
 import { ProjectAvatar } from "@codark-ai/ui/v2/project-avatar-v2"
-import { SessionProgressIndicatorV2 } from "@opencode-ai/session-ui/v2/session-progress-indicator-v2"
+import { SessionProgressIndicatorV2 } from "@codark-ai/session-ui/v2/session-progress-indicator-v2"
 import { Show } from "solid-js"
 
 export function SessionTabAvatar(props: {

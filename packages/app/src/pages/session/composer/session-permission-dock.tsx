@@ -1,7 +1,7 @@
 import { For, Show } from "solid-js"
 import type { PermissionRequest } from "@codark-ai/sdk/v2"
 import { Button } from "@codark-ai/ui/button"
-import { DockPrompt } from "@opencode-ai/session-ui/dock-prompt"
+import { DockPrompt } from "@codark-ai/session-ui/dock-prompt"
 import { Icon } from "@codark-ai/ui/icon"
 import { useLanguage } from "@/context/language"
 

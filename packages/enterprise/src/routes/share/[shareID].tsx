@@ -1,7 +1,7 @@
 import { Message, Model, Part, Session, SessionStatus, SnapshotFileDiff, UserMessage } from "@codark-ai/sdk/v2"
-import { SessionTurn } from "@opencode-ai/session-ui/session-turn"
-import { SessionReview } from "@opencode-ai/session-ui/session-review"
-import { DataProvider } from "@opencode-ai/session-ui/context"
+import { SessionTurn } from "@codark-ai/session-ui/session-turn"
+import { SessionReview } from "@codark-ai/session-ui/session-review"
+import { DataProvider } from "@codark-ai/session-ui/context"
 import { FileComponentProvider } from "@codark-ai/ui/context/file"
 import { WorkerPoolProvider } from "@codark-ai/ui/context/worker-pool"
 import { createAsync, query, useParams } from "@solidjs/router"
@@ -17,15 +17,15 @@ import { DateTime } from "luxon"
 import { createStore } from "solid-js/store"
 import NotFound from "../[...404]"
 import { Tabs } from "@codark-ai/ui/tabs"
-import { MessageNav } from "@opencode-ai/session-ui/message-nav"
-import { FileSSR } from "@opencode-ai/session-ui/file-ssr"
+import { MessageNav } from "@codark-ai/session-ui/message-nav"
+import { FileSSR } from "@codark-ai/session-ui/file-ssr"
 import { clientOnly } from "@solidjs/start"
 import { Meta, Title } from "@solidjs/meta"
 import { Base64 } from "js-base64"
 import { getRequestEvent } from "solid-js/web"
 
 const ClientOnlyWorkerPoolProvider = clientOnly(() =>
-  import("@opencode-ai/session-ui/pierre/worker").then((m) => ({
+  import("@codark-ai/session-ui/pierre/worker").then((m) => ({
     default: (props: { children: any }) => (
       <WorkerPoolProvider pools={m.getWorkerPools()}>{props.children}</WorkerPoolProvider>
     ),

@@ -14,7 +14,7 @@ import type {
   VcsInfo,
 } from "@codark-ai/sdk/v2/client"
 import type { FileDiffInfo } from "@codark-ai/client/promise"
-import { NormalizedProviderListResponse } from "@opencode-ai/session-ui/context"
+import { NormalizedProviderListResponse } from "@codark-ai/session-ui/context"
 import type { CommandInfo, McpResource, McpServer, SessionMessageInfo } from "@codark-ai/client/promise"
 import type { Accessor } from "solid-js"
 import type { SetStoreFunction, Store } from "solid-js/store"

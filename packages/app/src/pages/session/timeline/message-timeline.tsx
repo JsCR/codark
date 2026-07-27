@@ -26,7 +26,7 @@ import {
   Part as MessagePart,
   partDefaultOpen,
   type UserActions,
-} from "@opencode-ai/session-ui/message-part"
+} from "@codark-ai/session-ui/message-part"
 import { DiffChanges } from "@codark-ai/ui/diff-changes"
 import { FileIcon } from "@codark-ai/ui/file-icon"
 import { Icon } from "@codark-ai/ui/icon"
@@ -39,7 +39,7 @@ import { Dialog } from "@codark-ai/ui/dialog"
 import { DialogFooter, DialogHeader, DialogTitleGroup, DialogV2 } from "@codark-ai/ui/v2/dialog-v2"
 import { InlineInput } from "@codark-ai/ui/inline-input"
 import { ButtonV2 } from "@codark-ai/ui/v2/button-v2"
-import { SessionRetry } from "@opencode-ai/session-ui/session-retry"
+import { SessionRetry } from "@codark-ai/session-ui/session-retry"
 import { isScrollKeyTarget, scrollKey, scrollKeyOwner, ScrollView } from "@codark-ai/ui/scroll-view"
 import { StickyAccordionHeader } from "@codark-ai/ui/sticky-accordion-header"
 import { TextField } from "@codark-ai/ui/text-field"
@@ -55,7 +55,7 @@ import type {
 import { showToast } from "@/utils/toast"
 import { getDirectory, getFilename } from "@codark-ai/core/util/path"
 import { Popover as KobaltePopover } from "@kobalte/core/popover"
-import { normalize } from "@opencode-ai/session-ui/session-diff"
+import { normalize } from "@codark-ai/session-ui/session-diff"
 import { useFileComponent } from "@codark-ai/ui/context/file"
 import { shouldMarkBoundaryGesture, normalizeWheelDelta } from "@/pages/session/message-gesture"
 import { SessionContextUsage } from "@/components/session-context-usage"

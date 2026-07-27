@@ -57,7 +57,7 @@
     "@codark-ai/core": "workspace:*",
     "@codark-ai/schema": "workspace:*",
     "@codark-ai/sdk": "workspace:*",
-    "@opencode-ai/session-ui": "workspace:*",
+    "@codark-ai/session-ui": "workspace:*",
     "@codark-ai/ui": "workspace:*",
     "@pierre/trees": "1.0.0-beta.4",
     "@sentry/solid": "catalog:",

@@ -25,7 +25,7 @@
       "dependsOn": ["^build"],
       "outputs": []
     },
-    "@opencode-ai/session-ui#test": {
+    "@codark-ai/session-ui#test": {
       "dependsOn": ["^build"],
       "outputs": []
     }

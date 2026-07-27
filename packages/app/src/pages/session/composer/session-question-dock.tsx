@@ -2,7 +2,7 @@ import { For, Show, createEffect, createMemo, onCleanup, onMount, type Component
 import { createStore } from "solid-js/store"
 import { useMutation } from "@tanstack/solid-query"
 import { Button } from "@codark-ai/ui/button"
-import { DockPrompt } from "@opencode-ai/session-ui/dock-prompt"
+import { DockPrompt } from "@codark-ai/session-ui/dock-prompt"
 import { Icon } from "@codark-ai/ui/icon"
 import { useSpring } from "@codark-ai/ui/motion-spring"
 import { showToast } from "@/utils/toast"

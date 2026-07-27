@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@codark-ai/core": "workspace:*",
-    "@opencode-ai/session-ui": "workspace:*",
+    "@codark-ai/session-ui": "workspace:*",
     "@codark-ai/ui": "workspace:*",
     "aws4fetch": "^1.0.20",
     "@pierre/diffs": "catalog:",
