@@ -93,7 +93,7 @@ Lo script di installazione rispetta il seguente ordine di priorità per il perco
 1. `$CODARK_INSTALL_DIR` – Directory di installazione personalizzata
 2. `$XDG_BIN_DIR` – Percorso conforme alla XDG Base Directory Specification
 3. `$HOME/bin` – Directory binaria standard dell’utente (se esiste o può essere creata)
-4. `$HOME/.opencode/bin` – Fallback predefinito
+4. `$HOME/.codark/bin` – Fallback predefinito
 
 ```bash
 # Esempi

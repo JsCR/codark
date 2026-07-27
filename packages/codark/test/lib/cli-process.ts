@@ -8,7 +8,7 @@
 // Configuration flows through opencode's built-in test affordances:
 //   - CODARK_CONFIG_CONTENT      : provider config inline, no files to find
 //   - CODARK_TEST_HOME           : pins os.homedir() → tmpdir
-//   - CODARK_DISABLE_PROJECT_CONFIG : skip walking up for opencode.json
+//   - CODARK_DISABLE_PROJECT_CONFIG : skip walking up for codark.json
 //   - CODARK_PURE                : skip external plugin discovery + install
 //   - CODARK_DISABLE_AUTOUPDATE / AUTOCOMPACT / MODELS_FETCH : no background work
 // Plus HOME / XDG_* pointing at the tmpdir for belt-and-suspenders isolation.
@@ -30,8 +30,8 @@ import { TestLLMServer } from "./llm-server"
 import { testProviderConfig } from "./test-provider"
 import { it } from "./effect"
 
-const opencodeRoot = path.resolve(import.meta.dir, "../../")
-const cliEntry = path.join(opencodeRoot, "src/index.ts")
+const codarkRoot = path.resolve(import.meta.dir, "../../")
+const cliEntry = path.join(codarkRoot, "src/index.ts")
 
 export const testModelID = "test/test-model"
 

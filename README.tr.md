@@ -93,7 +93,7 @@ Kurulum betiği (install script), kurulum yolu (installation path) için aşağ�
 1. `$CODARK_INSTALL_DIR` - Özel kurulum dizini
 2. `$XDG_BIN_DIR` - XDG Base Directory Specification uyumlu yol
 3. `$HOME/bin` - Standart kullanıcı binary dizini (varsa veya oluşturulabiliyorsa)
-4. `$HOME/.opencode/bin` - Varsayılan yedek konum
+4. `$HOME/.codark/bin` - Varsayılan yedek konum
 
 ```bash
 # Örnekler

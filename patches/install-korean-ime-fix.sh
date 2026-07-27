@@ -18,8 +18,8 @@ ORANGE='\033[38;5;214m'
 MUTED='\033[0;2m'
 NC='\033[0m'
 
-CODARK_DIR="${CODARK_DIR:-$HOME/.opencode}"
-CODARK_SRC="${CODARK_SRC:-$HOME/.opencode-src}"
+CODARK_DIR="${CODARK_DIR:-$HOME/.codark}"
+CODARK_SRC="${CODARK_SRC:-$HOME/.codark-src}"
 FORK_REPO="${FORK_REPO:-https://github.com/claudianus/opencode.git}"
 FORK_BRANCH="${FORK_BRANCH:-fix-zhipuai-coding-plan-thinking}"
 

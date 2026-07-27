@@ -14,7 +14,7 @@ type Recorded = {
   readonly body: unknown
 }
 
-const opencodeSpec = async (): Promise<Document> => {
+const codarkSpec = async (): Promise<Document> => {
   return Bun.file(new URL("./fixtures/opencode-v2-openapi.json", import.meta.url)).json() as Promise<Document>
 }
 
@@ -174,7 +174,7 @@ describe("OpenAPI.fromSpec", () => {
   })
 
   test("converts representative opencode operations into the expected tool shape", async () => {
-    const spec = await opencodeSpec()
+    const spec = await codarkSpec()
     const result = OpenAPI.fromSpec({ spec, baseUrl })
 
     expect(result.skipped).toHaveLength(5)
@@ -356,7 +356,7 @@ describe("OpenAPI.fromSpec", () => {
   })
 
   test("documents that the opencode fixture is unauthenticated", async () => {
-    const spec = await opencodeSpec()
+    const spec = await codarkSpec()
     const components = isRecord(spec.components) ? spec.components : {}
     const result = OpenAPI.fromSpec({ spec, baseUrl })
 
@@ -372,7 +372,7 @@ describe("OpenAPI.fromSpec", () => {
   test("exposes real opencode operations through CodeMode discovery", async () => {
     const { layer } = recordingClient(() => json({}))
     const runtime = CodeMode.make({
-      tools: { opencode: OpenAPI.fromSpec({ spec: await opencodeSpec(), baseUrl }).tools },
+      tools: { opencode: OpenAPI.fromSpec({ spec: await codarkSpec(), baseUrl }).tools },
     })
     const result = await Effect.runPromise(
       runtime
@@ -389,7 +389,7 @@ describe("OpenAPI.fromSpec", () => {
     expect(result.value).toMatchObject({
       items: [
         {
-          path: "tools.opencode.v2.health.get",
+          path: "tools.codark.v2.health.get",
           description: "Check whether the API server is ready to accept requests.",
         },
       ],
@@ -403,15 +403,15 @@ describe("OpenAPI.fromSpec", () => {
       return json({ id: "ses_456" })
     })
     const runtime = CodeMode.make({
-      tools: { opencode: OpenAPI.fromSpec({ spec: await opencodeSpec(), baseUrl }).tools },
+      tools: { opencode: OpenAPI.fromSpec({ spec: await codarkSpec(), baseUrl }).tools },
     })
 
     const result = await Effect.runPromise(
       runtime
         .execute(
           `
-          const existing = await tools.opencode.v2.session.get({ sessionID: "ses_123" })
-          const created = await tools.opencode.v2.session.create({ id: "ses_456" })
+          const existing = await tools.codark.v2.session.get({ sessionID: "ses_123" })
+          const created = await tools.codark.v2.session.create({ id: "ses_456" })
           return { existing, created }
         `,
         )
@@ -431,7 +431,7 @@ describe("OpenAPI.fromSpec", () => {
 
   test("serializes deep-object query parameters from the opencode fixture", async () => {
     const client = recordingClient(() => json({ directory: "/tmp" }))
-    const location = toolAt(OpenAPI.fromSpec({ spec: await opencodeSpec(), baseUrl }).tools, "v2.location.get")
+    const location = toolAt(OpenAPI.fromSpec({ spec: await codarkSpec(), baseUrl }).tools, "v2.location.get")
     if (!Tool.isDefinition(location)) throw new Error("v2.location.get was not generated")
 
     await Effect.runPromise(
@@ -806,11 +806,11 @@ describe("OpenAPI.fromSpec", () => {
   test("fails missing required parameters before auth and network", async () => {
     const { requests, layer } = recordingClient(() => json({}))
     const runtime = CodeMode.make({
-      tools: { opencode: OpenAPI.fromSpec({ spec: await opencodeSpec(), baseUrl }).tools },
+      tools: { opencode: OpenAPI.fromSpec({ spec: await codarkSpec(), baseUrl }).tools },
     })
 
     const result = await Effect.runPromise(
-      runtime.execute("return await tools.opencode.v2.session.get({})").pipe(Effect.provide(layer)),
+      runtime.execute("return await tools.codark.v2.session.get({})").pipe(Effect.provide(layer)),
     )
 
     expect(result).toMatchObject({ ok: false })

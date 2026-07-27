@@ -2,7 +2,7 @@ import React from "react"
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig } from "remotion"
 import { days, launchIndex, glmWeekTokensT, segments } from "./data"
 
-// stats.opencode.ai design tokens (light theme)
+// stats.codark.ai design tokens (light theme)
 const c = {
   bg: "#ffffff",
   ink: "#161616",
@@ -25,7 +25,7 @@ const glmColor = segments.find((s) => s.hero)!.color
 
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v))
 
-// the correct opencode "DATA" wordmark (from stats.opencode.ai header)
+// the correct opencode "DATA" wordmark (from stats.codark.ai header)
 function DataWordmark({ height = 30, color = c.ink }: { height?: number; color?: string }) {
   return (
     <svg width={(height * 66) / 20} height={height} viewBox="0 0 66 20" fill="none" style={{ color }}>

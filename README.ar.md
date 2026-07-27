@@ -93,7 +93,7 @@ scoop bucket add extras; scoop install extras/opencode-desktop
 1. `$CODARK_INSTALL_DIR` - مجلد تثبيت مخصص
 2. `$XDG_BIN_DIR` - مسار متوافق مع مواصفات XDG Base Directory
 3. `$HOME/bin` - مجلد الثنائيات القياسي للمستخدم (ان وجد او امكن انشاؤه)
-4. `$HOME/.opencode/bin` - المسار الافتراضي الاحتياطي
+4. `$HOME/.codark/bin` - المسار الافتراضي الاحتياطي
 
 ```bash
 # امثلة

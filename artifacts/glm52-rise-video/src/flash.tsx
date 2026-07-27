@@ -1,7 +1,7 @@
 import React from "react"
 import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion"
 
-// stats.opencode.ai design tokens (light theme)
+// stats.codark.ai design tokens (light theme)
 const c = {
   bg: "#ffffff",
   ink: "#161616",

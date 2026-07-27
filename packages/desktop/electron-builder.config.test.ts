@@ -4,9 +4,9 @@ import type { Configuration } from "electron-builder"
 const legacyDesktopEntry = "resources/linux/opencode-desktop.desktop"
 
 const channels = [
-  { channel: "dev", appId: "ai.opencode.desktop.dev" },
-  { channel: "beta", appId: "ai.opencode.desktop.beta" },
-  { channel: "prod", appId: "ai.opencode.desktop" },
+  { channel: "dev", appId: "ai.codark.desktop.dev" },
+  { channel: "beta", appId: "ai.codark.desktop.beta" },
+  { channel: "prod", appId: "ai.codark.desktop" },
 ] as const
 
 for (const channel of channels) {
@@ -41,8 +41,8 @@ test("keeps a hidden prod launcher for old Linux pins", async () => {
   expect(config.rpm?.fpm?.[0]).toEndWith(`${legacyDesktopEntry}=/usr/share/applications/opencode-desktop.desktop`)
 
   const desktop = await Bun.file(legacyDesktopEntry).text()
-  expect(desktop).toContain("Exec=/opt/OpenCode/ai.opencode.desktop %U")
-  expect(desktop).toContain("Icon=ai.opencode.desktop")
-  expect(desktop).toContain("StartupWMClass=ai.opencode.desktop")
+  expect(desktop).toContain("Exec=/opt/OpenCode/ai.codark.desktop %U")
+  expect(desktop).toContain("Icon=ai.codark.desktop")
+  expect(desktop).toContain("StartupWMClass=ai.codark.desktop")
   expect(desktop).toContain("NoDisplay=true")
 })

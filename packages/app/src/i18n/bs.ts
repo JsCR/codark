@@ -103,9 +103,9 @@ export const dict = {
   "dialog.provider.group.popular": "Popularno",
   "dialog.provider.group.other": "Ostalo",
   "dialog.provider.tag.recommended": "Preporučeno",
-  "dialog.provider.opencode.note": "Kurirani modeli uključujući Claude, GPT, Gemini i druge",
-  "dialog.provider.opencode.tagline": "Pouzdani optimizovani modeli",
-  "dialog.provider.opencodeGo.tagline": "Povoljna pretplata za sve",
+  "dialog.provider.codark.note": "Kurirani modeli uključujući Claude, GPT, Gemini i druge",
+  "dialog.provider.codark.tagline": "Pouzdani optimizovani modeli",
+  "dialog.provider.codarkGo.tagline": "Povoljna pretplata za sve",
   "dialog.provider.anthropic.note": "Direktan pristup Claude modelima, uključujući Pro i Max",
   "dialog.provider.copilot.note": "AI modeli za pomoć pri kodiranju putem GitHub Copilot",
   "dialog.provider.openai.note": "GPT modeli za brze, sposobne opšte AI zadatke",
@@ -137,13 +137,13 @@ export const dict = {
   "provider.connect.apiKey.label": "{{provider}} API ključ",
   "provider.connect.apiKey.placeholder": "API ključ",
   "provider.connect.apiKey.required": "API ključ je obavezan",
-  "provider.connect.opencodeZen.line1":
+  "provider.connect.codarkZen.line1":
     "OpenCode Zen ti daje pristup kuriranom skupu pouzdanih, optimizovanih modela za coding agente.",
-  "provider.connect.opencodeZen.line2":
+  "provider.connect.codarkZen.line2":
     "Sa jednim API ključem dobijaš pristup modelima kao što su Claude, GPT, Gemini, GLM i drugi.",
-  "provider.connect.opencodeZen.visit.prefix": "Posjeti ",
-  "provider.connect.opencodeZen.visit.link": "opencode.ai/zen",
-  "provider.connect.opencodeZen.visit.suffix": " da preuzmeš svoj API ključ.",
+  "provider.connect.codarkZen.visit.prefix": "Posjeti ",
+  "provider.connect.codarkZen.visit.link": "opencode.ai/zen",
+  "provider.connect.codarkZen.visit.suffix": " da preuzmeš svoj API ključ.",
   "provider.connect.oauth.code.visit.prefix": "Posjeti ",
   "provider.connect.oauth.code.visit.link": "ovaj link",
   "provider.connect.oauth.code.visit.suffix":
@@ -313,7 +313,7 @@ export const dict = {
   "dialog.mcp.empty": "Nema konfigurisnih MCP-ova",
 
   "dialog.lsp.empty": "LSP-ovi se automatski otkrivaju prema tipu datoteke",
-  "dialog.plugins.empty": "Plugini su konfigurisani u opencode.json",
+  "dialog.plugins.empty": "Plugini su konfigurisani u codark.json",
 
   "mcp.status.connected": "povezano",
   "mcp.status.failed": "neuspjelo",
@@ -367,7 +367,7 @@ export const dict = {
   "wsl.server.retryStart": "Ponovi pokretanje",
   "wsl.server.updating": "Ažuriranje...",
   "wsl.onboarding.step.distro": "Odaberi distribuciju",
-  "wsl.onboarding.step.opencode": "Codark",
+  "wsl.onboarding.step.codark": "Codark",
   "wsl.onboarding.checkingRuntime": "Provjera WSL-a...",
   "wsl.onboarding.restartRequired": "Potrebno je ponovo pokrenuti Windows da bi se završila instalacija WSL-a.",
   "wsl.onboarding.ready": "WSL je spreman.",
@@ -387,8 +387,8 @@ export const dict = {
   "wsl.onboarding.updatingOpencodeIn": "Ažuriranje Codark u distribuciji {{distro}}...",
   "wsl.onboarding.updateOpencodeIn": "Ažuriraj Codark u distribuciji {{distro}}.",
   "wsl.onboarding.updateOpencode": "Ažuriraj Codark",
-  "wsl.onboarding.opencodeReadyIn": "Codark je spreman u distribuciji {{distro}}.",
-  "wsl.onboarding.opencodeReady": "Codark je spreman.",
+  "wsl.onboarding.codarkReadyIn": "Codark je spreman u distribuciji {{distro}}.",
+  "wsl.onboarding.codarkReady": "Codark je spreman.",
   "wsl.onboarding.installOpencodeIn": "Instaliraj Codark u distribuciji {{distro}}.",
   "wsl.onboarding.installOpencode": "Instaliraj Codark",
   "wsl.onboarding.chooseDistroFirst": "Prvo odaberi distribuciju.",
@@ -398,7 +398,7 @@ export const dict = {
   "wsl.onboarding.checkAgain": "Provjeri ponovo",
   "wsl.onboarding.distroStatus.ready": "Spremno",
   "wsl.onboarding.distroStatus.checking": "Provjera...",
-  "wsl.onboarding.distroStatus.opencodeMissing": "Codark nije instaliran",
+  "wsl.onboarding.distroStatus.codarkMissing": "Codark nije instaliran",
   "wsl.onboarding.distroStatus.missingTools": "Nedostaju bash i curl",
   "wsl.onboarding.distroStatus.unsupported": "Nije podržano · Koristi WSL 2",
   "wsl.onboarding.needAnotherDistro": "Treba ti druga distribucija?",
@@ -568,7 +568,7 @@ export const dict = {
   "error.chain.responseBody": "Tijelo odgovora:\n{{body}}",
   "error.chain.didYouMean": "Da li si mislio: {{suggestions}}",
   "error.chain.modelNotFound": "Model nije pronađen: {{provider}}/{{model}}",
-  "error.chain.checkConfig": "Provjeri konfiguraciju (opencode.json) provider/model names",
+  "error.chain.checkConfig": "Provjeri konfiguraciju (codark.json) provider/model names",
   "error.chain.mcpFailed": 'MCP server "{{name}}" nije uspio. Napomena: Codark još ne podržava MCP autentifikaciju.',
   "error.chain.providerAuthFailed": "Autentifikacija provajdera nije uspjela ({{provider}}): {{message}}",
   "error.chain.providerInitFailed":

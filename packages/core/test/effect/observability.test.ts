@@ -8,14 +8,14 @@ import { fileLogger } from "../../src/observability/logging"
 import { resource } from "../../src/observability/otlp"
 
 const otelResourceAttributes = process.env.OTEL_RESOURCE_ATTRIBUTES
-const opencodeClient = process.env.CODARK_CLIENT
+const codarkClient = process.env.CODARK_CLIENT
 
 afterEach(() => {
   if (otelResourceAttributes === undefined) delete process.env.OTEL_RESOURCE_ATTRIBUTES
   else process.env.OTEL_RESOURCE_ATTRIBUTES = otelResourceAttributes
 
-  if (opencodeClient === undefined) delete process.env.CODARK_CLIENT
-  else process.env.CODARK_CLIENT = opencodeClient
+  if (codarkClient === undefined) delete process.env.CODARK_CLIENT
+  else process.env.CODARK_CLIENT = codarkClient
 })
 
 describe("resource", () => {

@@ -93,7 +93,7 @@ Installationsscriptet bruger følgende prioriteringsrækkefølge for installatio
 1. `$CODARK_INSTALL_DIR` - Tilpasset installationsmappe
 2. `$XDG_BIN_DIR` - Sti der følger XDG Base Directory Specification
 3. `$HOME/bin` - Standard bruger-bin-mappe (hvis den findes eller kan oprettes)
-4. `$HOME/.opencode/bin` - Standard fallback
+4. `$HOME/.codark/bin` - Standard fallback
 
 ```bash
 # Eksempler

@@ -55,9 +55,9 @@ const APP_NAMES: Record<string, string> = {
   prod: "Codark",
 }
 const APP_IDS: Record<string, string> = {
-  dev: "ai.opencode.desktop.dev",
-  beta: "ai.opencode.desktop.beta",
-  prod: "ai.opencode.desktop",
+  dev: "ai.codark.desktop.dev",
+  beta: "ai.codark.desktop.beta",
+  prod: "ai.codark.desktop",
 }
 const TEST_ONBOARDING = process.env.CODARK_TEST_ONBOARDING === "1"
 const jsCallStackFeature = "DocumentPolicyIncludeJSCallStacksInCrashReports"
@@ -120,7 +120,7 @@ const main = Effect.gen(function* () {
 
   process.env.CODARK_DISABLE_EMBEDDED_WEB_UI = "true"
 
-  const appId = app.isPackaged ? APP_IDS[CHANNEL] : "ai.opencode.desktop.dev"
+  const appId = app.isPackaged ? APP_IDS[CHANNEL] : "ai.codark.desktop.dev"
   const onboardingTestRoot = ((): string | undefined => {
     if (!TEST_ONBOARDING) return
 

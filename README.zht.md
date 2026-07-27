@@ -93,7 +93,7 @@ scoop bucket add extras; scoop install extras/opencode-desktop
 1. `$CODARK_INSTALL_DIR` - 自定義安裝目錄
 2. `$XDG_BIN_DIR` - 符合 XDG 基礎目錄規範的路徑
 3. `$HOME/bin` - 標準使用者執行檔目錄 (若存在或可建立)
-4. `$HOME/.opencode/bin` - 預設備用路徑
+4. `$HOME/.codark/bin` - 預設備用路徑
 
 ```bash
 # 範例

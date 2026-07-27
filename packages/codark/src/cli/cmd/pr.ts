@@ -98,10 +98,10 @@ export const PrCommand = effectCmd({
     UI.println("Starting opencode...")
     UI.println()
 
-    const opencodeArgs = sessionId ? ["-s", sessionId] : []
+    const codarkArgs = sessionId ? ["-s", sessionId] : []
     const code = yield* Effect.promise(
       () =>
-        Process.spawn(["opencode", ...opencodeArgs], {
+        Process.spawn(["opencode", ...codarkArgs], {
           stdin: "inherit",
           stdout: "inherit",
           stderr: "inherit",
