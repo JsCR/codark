@@ -16,7 +16,7 @@
     "@jsx-email/render": "1.1.1",
     "@kobalte/core": "catalog:",
     "@openauthjs/openauth": "catalog:",
-    "@opencode-ai/console-core": "workspace:*",
+    "@codark-ai/console-core": "workspace:*",
     "@codark-ai/console-mail": "workspace:*",
     "@codark-ai/console-resource": "workspace:*",
     "@codark-ai/ui": "workspace:*",

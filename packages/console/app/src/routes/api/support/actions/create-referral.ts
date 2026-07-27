@@ -1,6 +1,6 @@
 import type { APIEvent } from "@solidjs/start/server"
-import { Referral } from "@opencode-ai/console-core/referral.js"
-import { safeEqual } from "@opencode-ai/console-core/util/crypto.js"
+import { Referral } from "@codark-ai/console-core/referral.js"
+import { safeEqual } from "@codark-ai/console-core/util/crypto.js"
 import { Resource } from "@codark-ai/console-resource"
 import z from "zod"
 

@@ -1,6 +1,6 @@
 import type { APIEvent } from "@solidjs/start/server"
-import { Account } from "@opencode-ai/console-core/account.js"
-import { safeEqual } from "@opencode-ai/console-core/util/crypto.js"
+import { Account } from "@codark-ai/console-core/account.js"
+import { safeEqual } from "@codark-ai/console-core/util/crypto.js"
 import { Resource } from "@codark-ai/console-resource"
 import z from "zod"
 
