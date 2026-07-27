@@ -126,9 +126,9 @@
         "@opencode-ai/schema": "workspace:*",
       },
       "devDependencies": {
+        "@codark-ai/httpapi-codegen": "workspace:*",
         "@effect/platform-node": "catalog:",
         "@opencode-ai/core": "workspace:*",
-        "@opencode-ai/httpapi-codegen": "workspace:*",
         "@opencode-ai/server": "workspace:*",
         "@tsconfig/bun": "catalog:",
         "@types/bun": "catalog:",
@@ -527,7 +527,7 @@
       },
     },
     "packages/httpapi-codegen": {
-      "name": "@opencode-ai/httpapi-codegen",
+      "name": "@codark-ai/httpapi-codegen",
       "dependencies": {
         "effect": "catalog:",
         "prettier": "3.6.2",
@@ -1484,6 +1484,8 @@
 
     "@codark-ai/function": ["@codark-ai/function@workspace:packages/function"],
 
+    "@codark-ai/httpapi-codegen": ["@codark-ai/httpapi-codegen@workspace:packages/httpapi-codegen"],
+
     "@codark-ai/stats-core": ["@codark-ai/stats-core@workspace:packages/stats/core"],
 
     "@codark-ai/web": ["@codark-ai/web@workspace:packages/web"],
@@ -1981,8 +1983,6 @@
     "@opencode-ai/enterprise": ["@opencode-ai/enterprise@workspace:packages/enterprise"],
 
     "@opencode-ai/http-recorder": ["@opencode-ai/http-recorder@workspace:packages/http-recorder"],
-
-    "@opencode-ai/httpapi-codegen": ["@opencode-ai/httpapi-codegen@workspace:packages/httpapi-codegen"],
 
     "@opencode-ai/llm": ["@opencode-ai/llm@workspace:packages/llm"],
 
