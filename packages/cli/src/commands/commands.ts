@@ -3,7 +3,7 @@ import { Spec } from "../framework/spec"
 
 declare const CODARK_CLI_NAME: string | undefined
 
-export const Commands = Spec.make(typeof CODARK_CLI_NAME === "string" ? CODARK_CLI_NAME : "opencode", {
+export const Commands = Spec.make(typeof CODARK_CLI_NAME === "string" ? CODARK_CLI_NAME : "codark", {
   description: "OpenCode 2.0 preview command line interface",
   commands: [
     Spec.make("api", {
