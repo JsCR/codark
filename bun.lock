@@ -122,8 +122,8 @@
     "packages/client": {
       "name": "@opencode-ai/client",
       "dependencies": {
+        "@codark-ai/protocol": "workspace:*",
         "@codark-ai/schema": "workspace:*",
-        "@opencode-ai/protocol": "workspace:*",
       },
       "devDependencies": {
         "@codark-ai/httpapi-codegen": "workspace:*",
@@ -589,6 +589,7 @@
         "@aws-sdk/credential-providers": "3.1057.0",
         "@clack/prompts": "1.0.0-alpha.1",
         "@codark-ai/codemode": "workspace:*",
+        "@codark-ai/protocol": "workspace:*",
         "@codark-ai/schema": "workspace:*",
         "@codark-ai/script": "workspace:*",
         "@codark-ai/sdk": "workspace:*",
@@ -602,7 +603,6 @@
         "@openauthjs/openauth": "catalog:",
         "@opencode-ai/llm": "workspace:*",
         "@opencode-ai/plugin": "workspace:*",
-        "@opencode-ai/protocol": "workspace:*",
         "@opencode-ai/server": "workspace:*",
         "@opencode-ai/tui": "workspace:*",
         "@openrouter/ai-sdk-provider": "2.9.0",
@@ -718,7 +718,7 @@
       ],
     },
     "packages/protocol": {
-      "name": "@opencode-ai/protocol",
+      "name": "@codark-ai/protocol",
       "dependencies": {
         "@codark-ai/schema": "workspace:*",
         "effect": "catalog:",
@@ -783,8 +783,8 @@
       "name": "@opencode-ai/server",
       "version": "1.18.5",
       "dependencies": {
+        "@codark-ai/protocol": "workspace:*",
         "@opencode-ai/core": "workspace:*",
-        "@opencode-ai/protocol": "workspace:*",
         "drizzle-orm": "catalog:",
         "effect": "catalog:",
       },
@@ -1490,6 +1490,8 @@
 
     "@codark-ai/httpapi-codegen": ["@codark-ai/httpapi-codegen@workspace:packages/httpapi-codegen"],
 
+    "@codark-ai/protocol": ["@codark-ai/protocol@workspace:packages/protocol"],
+
     "@codark-ai/schema": ["@codark-ai/schema@workspace:packages/schema"],
 
     "@codark-ai/script": ["@codark-ai/script@workspace:packages/script"],
@@ -1997,8 +1999,6 @@
     "@opencode-ai/llm": ["@opencode-ai/llm@workspace:packages/llm"],
 
     "@opencode-ai/plugin": ["@opencode-ai/plugin@workspace:packages/plugin"],
-
-    "@opencode-ai/protocol": ["@opencode-ai/protocol@workspace:packages/protocol"],
 
     "@opencode-ai/server": ["@opencode-ai/server@workspace:packages/server"],
 

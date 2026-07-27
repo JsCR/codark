@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@codark-ai/schema": "workspace:*",
-    "@opencode-ai/protocol": "workspace:*"
+    "@codark-ai/protocol": "workspace:*"
   },
   "peerDependencies": {
     "effect": "4.0.0-beta.83"

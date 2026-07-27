@@ -14,7 +14,7 @@ await Effect.runPromise(
           outputTypes: {
             "events.subscribe": {
               name: "OpenCodeEventEncoded",
-              import: 'import type { OpenCodeEventEncoded } from "@opencode-ai/protocol/groups/event"',
+              import: 'import type { OpenCodeEventEncoded } from "@codark-ai/protocol/groups/event"',
             },
           },
         }),
