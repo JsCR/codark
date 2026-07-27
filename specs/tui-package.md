@@ -144,7 +144,7 @@ Exit criteria:
 
 - `packages/tui` typechecks independently.
 - Its test command runs from `packages/tui`.
-- The package has no dependency on `opencode`, `@opencode-ai/cli`, or
+- The package has no dependency on `opencode`, `@codark-ai/cli`, or
   `@codark-ai/core`.
 
 Checkpoint commit:
