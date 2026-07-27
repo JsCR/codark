@@ -1,5 +1,5 @@
-import { useMarked } from "@opencode-ai/ui/context/marked"
-import { useI18n } from "@opencode-ai/ui/context/i18n"
+import { useMarked } from "@codark-ai/ui/context/marked"
+import { useI18n } from "@codark-ai/ui/context/i18n"
 import morphdom from "morphdom"
 import { checksum } from "@opencode-ai/core/util/encode"
 import {
@@ -15,9 +15,9 @@ import {
   splitProps,
 } from "solid-js"
 import { isServer, render } from "solid-js/web"
-import { Icon as IconV2 } from "@opencode-ai/ui/v2/icon"
-import { IconButtonV2 } from "@opencode-ai/ui/v2/icon-button-v2"
-import { TooltipV2 } from "@opencode-ai/ui/v2/tooltip-v2"
+import { Icon as IconV2 } from "@codark-ai/ui/v2/icon"
+import { IconButtonV2 } from "@codark-ai/ui/v2/icon-button-v2"
+import { TooltipV2 } from "@codark-ai/ui/v2/tooltip-v2"
 import { bundledLanguages } from "shiki"
 import { canReusePendingBlock, project, type Block, type Projection } from "./markdown-stream"
 import {

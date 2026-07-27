@@ -1,6 +1,6 @@
 import { batch, createMemo, createRoot, onCleanup } from "solid-js"
 import { createStore, reconcile, type SetStoreFunction, type Store } from "solid-js/store"
-import { createSimpleContext } from "@opencode-ai/ui/context"
+import { createSimpleContext } from "@codark-ai/ui/context"
 import { useParams } from "@solidjs/router"
 import { base64Encode } from "@opencode-ai/core/util/encode"
 import { Persist, persisted } from "@/utils/persist"

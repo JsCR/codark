@@ -1,7 +1,7 @@
 import { createStore, reconcile } from "solid-js/store"
 import { type Accessor, batch, createEffect, createMemo, createRoot, getOwner, onCleanup } from "solid-js"
 import { useParams, useSearchParams } from "@solidjs/router"
-import { createSimpleContext } from "@opencode-ai/ui/context"
+import { createSimpleContext } from "@codark-ai/ui/context"
 import type { ServerSDK } from "./server-sdk"
 import type { ServerSync } from "./server-sync"
 import { usePlatform } from "@/context/platform"

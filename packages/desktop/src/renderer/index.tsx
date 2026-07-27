@@ -27,8 +27,8 @@ import { DesktopFirstLaunchOnboarding } from "./onboarding"
 import { resetZoom, setPinchZoomEnabled, webviewZoom, zoomIn, zoomOut } from "./webview-zoom"
 import { availableStartupServer, readyWslConnections } from "./wsl/connections"
 import "./styles.css"
-import { Splash } from "@opencode-ai/ui/logo"
-import { useTheme } from "@opencode-ai/ui/theme/context"
+import { Splash } from "@codark-ai/ui/logo"
+import { useTheme } from "@codark-ai/ui/theme/context"
 
 const root = document.getElementById("root")
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {

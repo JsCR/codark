@@ -15,7 +15,7 @@
     "@ibm/plex": "6.4.1",
     "@kobalte/core": "catalog:",
     "@codark-ai/stats-core": "workspace:*",
-    "@opencode-ai/ui": "workspace:*",
+    "@codark-ai/ui": "workspace:*",
     "@solidjs/meta": "catalog:",
     "@solidjs/router": "catalog:",
     "@solidjs/start": "catalog:",

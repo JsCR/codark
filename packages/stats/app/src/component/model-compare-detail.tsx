@@ -1,5 +1,5 @@
 import { Link, Meta, Title } from "@solidjs/meta"
-import { ProviderIcon } from "@opencode-ai/ui/provider-icon"
+import { ProviderIcon } from "@codark-ai/ui/provider-icon"
 import {
   getStatsModelsComparisonData,
   type ModelUsagePoint,

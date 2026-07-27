@@ -1,8 +1,8 @@
 import { Component, For, Match, Show, Switch } from "solid-js"
-import { FileIcon } from "@opencode-ai/ui/file-icon"
-import { Icon } from "@opencode-ai/ui/icon"
-import { Tag } from "@opencode-ai/ui/v2/badge-v2"
-import { KeybindV2 } from "@opencode-ai/ui/v2/keybind-v2"
+import { FileIcon } from "@codark-ai/ui/file-icon"
+import { Icon } from "@codark-ai/ui/icon"
+import { Tag } from "@codark-ai/ui/v2/badge-v2"
+import { KeybindV2 } from "@codark-ai/ui/v2/keybind-v2"
 import { getDirectory, getFilename } from "@opencode-ai/core/util/path"
 
 export type AtOption =

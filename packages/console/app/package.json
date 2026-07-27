@@ -19,7 +19,7 @@
     "@opencode-ai/console-core": "workspace:*",
     "@codark-ai/console-mail": "workspace:*",
     "@codark-ai/console-resource": "workspace:*",
-    "@opencode-ai/ui": "workspace:*",
+    "@codark-ai/ui": "workspace:*",
     "@smithy/eventstream-codec": "4.2.7",
     "@smithy/util-utf8": "4.2.0",
     "@solidjs/meta": "catalog:",

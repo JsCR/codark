@@ -21,7 +21,7 @@
       "dependsOn": ["^build"],
       "outputs": []
     },
-    "@opencode-ai/ui#test": {
+    "@codark-ai/ui#test": {
       "dependsOn": ["^build"],
       "outputs": []
     },
