@@ -1,11 +1,11 @@
-import { LayerNode } from "@opencode-ai/core/effect/layer-node"
+import { LayerNode } from "@codark-ai/core/effect/layer-node"
 import { Effect, Layer, Context, Schema, Scope } from "effect"
 import { formatPatch, structuredPatch } from "diff"
 import { InstanceState } from "@/effect/instance-state"
-import { Watcher } from "@opencode-ai/core/filesystem/watcher"
+import { Watcher } from "@codark-ai/core/filesystem/watcher"
 import { Git } from "@/git"
 import { EventV2Bridge } from "@/event-v2-bridge"
-import { EventV2 } from "@opencode-ai/core/event"
+import { EventV2 } from "@codark-ai/core/event"
 import { VcsEvent } from "@codark-ai/schema/vcs-event"
 
 const PATCH_CONTEXT_LINES = 2_147_483_647

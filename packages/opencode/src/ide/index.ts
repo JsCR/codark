@@ -1,5 +1,5 @@
 import { Schema } from "effect"
-import { NamedError } from "@opencode-ai/core/util/error"
+import { NamedError } from "@codark-ai/core/util/error"
 import { Process } from "@/util/process"
 import { IdeEvent } from "@codark-ai/schema/ide-event"
 

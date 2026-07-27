@@ -20,7 +20,7 @@ import { displayName, errorMessage, projectForSession } from "@/pages/layout/hel
 import { useSessionTabAvatarState } from "@/pages/layout/project-avatar-state"
 import { pathKey } from "@/utils/path-key"
 import { showToast } from "@/utils/toast"
-import { Binary } from "@opencode-ai/core/util/binary"
+import { Binary } from "@codark-ai/core/util/binary"
 import { archiveHomeSession } from "../home-session-archive"
 import type { HomeController } from "./home-controller"
 

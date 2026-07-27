@@ -24,8 +24,8 @@ import type {
   SessionApi,
 } from "@opencode-ai/client/promise"
 import { showToast } from "@/utils/toast"
-import { getFilename } from "@opencode-ai/core/util/path"
-import { retry } from "@opencode-ai/core/util/retry"
+import { getFilename } from "@codark-ai/core/util/path"
+import { retry } from "@codark-ai/core/util/retry"
 import { batch } from "solid-js"
 import { produce, reconcile, type SetStoreFunction, type Store } from "solid-js/store"
 import type { State, VcsCache } from "./types"

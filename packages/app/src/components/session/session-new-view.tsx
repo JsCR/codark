@@ -5,7 +5,7 @@ import { useSDK } from "@/context/sdk"
 import { useLanguage } from "@/context/language"
 import { Icon } from "@codark-ai/ui/icon"
 import { Mark } from "@codark-ai/ui/logo"
-import { getDirectory, getFilename } from "@opencode-ai/core/util/path"
+import { getDirectory, getFilename } from "@codark-ai/core/util/path"
 
 const MAIN_WORKTREE = "main"
 const CREATE_WORKTREE = "create"

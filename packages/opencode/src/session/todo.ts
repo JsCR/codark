@@ -1,10 +1,10 @@
-import { LayerNode } from "@opencode-ai/core/effect/layer-node"
+import { LayerNode } from "@codark-ai/core/effect/layer-node"
 import { SessionID } from "./schema"
 import { Effect, Layer, Context } from "effect"
-import { Database } from "@opencode-ai/core/database/database"
+import { Database } from "@codark-ai/core/database/database"
 import { eq } from "drizzle-orm"
 import { asc } from "drizzle-orm"
-import { TodoTable } from "@opencode-ai/core/session/sql"
+import { TodoTable } from "@codark-ai/core/session/sql"
 import { EventV2Bridge } from "@/event-v2-bridge"
 import { SessionTodo } from "@codark-ai/schema/session-todo"
 

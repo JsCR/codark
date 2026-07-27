@@ -1,8 +1,8 @@
 import { expect, test } from "bun:test"
 import { Schema } from "effect"
-import { AgentV2 } from "@opencode-ai/core/agent"
-import { ModelV2 } from "@opencode-ai/core/model"
-import { SessionV2 } from "@opencode-ai/core/session"
+import { AgentV2 } from "@codark-ai/core/agent"
+import { ModelV2 } from "@codark-ai/core/model"
+import { SessionV2 } from "@codark-ai/core/session"
 import { Agent } from "@codark-ai/schema/agent"
 import { Location } from "@codark-ai/schema/location"
 import { Model } from "@codark-ai/schema/model"
@@ -28,8 +28,8 @@ import { Reference } from "@codark-ai/schema/reference"
 import { SessionTodo } from "@codark-ai/schema/session-todo"
 import { Skill } from "@codark-ai/schema/skill"
 import { AbsolutePath, DateTimeUtcFromMillis, optional, statics } from "@codark-ai/schema/schema"
-import { ProviderV2 } from "@opencode-ai/core/provider"
-import { PluginV2 } from "@opencode-ai/core/plugin"
+import { ProviderV2 } from "@codark-ai/core/provider"
+import { PluginV2 } from "@codark-ai/core/plugin"
 
 test("Core reuses the canonical shared schemas", async () => {
   const [
@@ -55,27 +55,27 @@ test("Core reuses the canonical shared schemas", async () => {
     coreSchema,
     coreWorkspace,
   ] = await Promise.all([
-    import("@opencode-ai/core/command"),
-    import("@opencode-ai/core/integration/connection"),
-    import("@opencode-ai/core/credential"),
-    import("@opencode-ai/core/filesystem"),
-    import("@opencode-ai/core/integration"),
-    import("@opencode-ai/core/location"),
+    import("@codark-ai/core/command"),
+    import("@codark-ai/core/integration/connection"),
+    import("@codark-ai/core/credential"),
+    import("@codark-ai/core/filesystem"),
+    import("@codark-ai/core/integration"),
+    import("@codark-ai/core/location"),
     import("@codark-ai/llm"),
-    import("@opencode-ai/core/permission"),
-    import("@opencode-ai/core/v1/permission"),
-    import("@opencode-ai/core/project/copy"),
-    import("@opencode-ai/core/pty"),
-    import("@opencode-ai/core/project/schema"),
-    import("@opencode-ai/core/reference"),
-    import("@opencode-ai/core/session/input"),
-    import("@opencode-ai/core/session/message"),
-    import("@opencode-ai/core/session/todo"),
-    import("@opencode-ai/core/session/prompt"),
-    import("@opencode-ai/core/skill"),
-    import("@opencode-ai/core/v2-schema"),
-    import("@opencode-ai/core/schema"),
-    import("@opencode-ai/core/workspace"),
+    import("@codark-ai/core/permission"),
+    import("@codark-ai/core/v1/permission"),
+    import("@codark-ai/core/project/copy"),
+    import("@codark-ai/core/pty"),
+    import("@codark-ai/core/project/schema"),
+    import("@codark-ai/core/reference"),
+    import("@codark-ai/core/session/input"),
+    import("@codark-ai/core/session/message"),
+    import("@codark-ai/core/session/todo"),
+    import("@codark-ai/core/session/prompt"),
+    import("@codark-ai/core/skill"),
+    import("@codark-ai/core/v2-schema"),
+    import("@codark-ai/core/schema"),
+    import("@codark-ai/core/workspace"),
   ])
 
   const schemas = [

@@ -53,7 +53,7 @@ import type {
   UserMessage,
 } from "@codark-ai/sdk/v2"
 import { showToast } from "@/utils/toast"
-import { getDirectory, getFilename } from "@opencode-ai/core/util/path"
+import { getDirectory, getFilename } from "@codark-ai/core/util/path"
 import { Popover as KobaltePopover } from "@kobalte/core/popover"
 import { normalize } from "@opencode-ai/session-ui/session-diff"
 import { useFileComponent } from "@codark-ai/ui/context/file"

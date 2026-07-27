@@ -1,6 +1,6 @@
 import { createSignal, onCleanup, onMount, Show } from "solid-js"
 import { FileIcon } from "@codark-ai/ui/file-icon"
-import { getFilenameTruncated } from "@opencode-ai/core/util/path"
+import { getFilenameTruncated } from "@codark-ai/core/util/path"
 import { TooltipV2 } from "@codark-ai/ui/v2/tooltip-v2"
 import { AttachmentCardV2 } from "./attachment-card-v2"
 

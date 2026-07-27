@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@effect/platform-node": "catalog:",
-    "@opencode-ai/core": "workspace:*",
+    "@codark-ai/core": "workspace:*",
     "@codark-ai/httpapi-codegen": "workspace:*",
     "@opencode-ai/server": "workspace:*",
     "@tsconfig/bun": "catalog:",

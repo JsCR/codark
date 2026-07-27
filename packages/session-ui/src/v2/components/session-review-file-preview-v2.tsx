@@ -1,4 +1,4 @@
-import { getDirectory, getFilename } from "@opencode-ai/core/util/path"
+import { getDirectory, getFilename } from "@codark-ai/core/util/path"
 import type { SelectedLineRange } from "@pierre/diffs"
 import { DiffChanges } from "@codark-ai/ui/v2/diff-changes-v2"
 import { FileIcon } from "@codark-ai/ui/file-icon"

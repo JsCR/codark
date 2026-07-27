@@ -1,7 +1,7 @@
 import { useMarked } from "@codark-ai/ui/context/marked"
 import { useI18n } from "@codark-ai/ui/context/i18n"
 import morphdom from "morphdom"
-import { checksum } from "@opencode-ai/core/util/encode"
+import { checksum } from "@codark-ai/core/util/encode"
 import {
   type Accessor,
   type ComponentProps,

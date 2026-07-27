@@ -21,7 +21,7 @@ import {
 } from "@solidjs/router"
 import { QueryClient, QueryClientProvider } from "@tanstack/solid-query"
 import { Effect } from "effect"
-import { base64Encode } from "@opencode-ai/core/util/encode"
+import { base64Encode } from "@codark-ai/core/util/encode"
 import {
   type Component,
   createEffect,

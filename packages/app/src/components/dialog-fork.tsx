@@ -9,7 +9,7 @@ import { List } from "@codark-ai/ui/list"
 import { showToast } from "@/utils/toast"
 import { extractPromptFromParts } from "@/utils/prompt"
 import type { TextPart as SDKTextPart } from "@codark-ai/sdk/v2/client"
-import { base64Encode } from "@opencode-ai/core/util/encode"
+import { base64Encode } from "@codark-ai/core/util/encode"
 import { useLanguage } from "@/context/language"
 
 interface ForkableMessage {

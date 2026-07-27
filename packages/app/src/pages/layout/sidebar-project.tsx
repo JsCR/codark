@@ -1,6 +1,6 @@
 import { createMemo, For, Show, type Accessor, type JSX } from "solid-js"
 import { createStore } from "solid-js/store"
-import { base64Encode } from "@opencode-ai/core/util/encode"
+import { base64Encode } from "@codark-ai/core/util/encode"
 import { Button } from "@codark-ai/ui/button"
 import { ContextMenu } from "@codark-ai/ui/context-menu"
 import { HoverCard } from "@codark-ai/ui/hover-card"

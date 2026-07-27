@@ -1,5 +1,5 @@
-import { Global } from "@opencode-ai/core/global"
-import { InstallationVersion } from "@opencode-ai/core/installation/version"
+import { Global } from "@codark-ai/core/global"
+import { InstallationVersion } from "@codark-ai/core/installation/version"
 import { createOpencodeClient } from "@codark-ai/sdk/v2/client"
 import { ServerAuth } from "@opencode-ai/server/auth"
 import { Context, Effect, FileSystem, Layer, Option, Schedule, Schema, Scope } from "effect"

@@ -11,7 +11,7 @@
 import path from "path"
 import { CliRenderEvents, createCliRenderer, type CliRenderer, type ScrollbackWriter } from "@opentui/core"
 import { createDefaultOpenTuiKeymap } from "@opentui/keymap/opentui"
-import { Global } from "@opencode-ai/core/global"
+import { Global } from "@codark-ai/core/global"
 import { openEditor } from "@opencode-ai/tui/editor"
 import { registerOpencodeKeymap } from "@opencode-ai/tui/keymap"
 import { Session as SessionApi } from "@/session/session"

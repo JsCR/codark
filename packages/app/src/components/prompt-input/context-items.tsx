@@ -4,7 +4,7 @@ import { FileIcon } from "@codark-ai/ui/file-icon"
 import { IconButton } from "@codark-ai/ui/icon-button"
 import { Tooltip } from "@codark-ai/ui/tooltip"
 import { TooltipV2 } from "@codark-ai/ui/v2/tooltip-v2"
-import { getDirectory, getFilename, getFilenameTruncated } from "@opencode-ai/core/util/path"
+import { getDirectory, getFilename, getFilenameTruncated } from "@codark-ai/core/util/path"
 import type { ContextItem } from "@/context/prompt"
 
 type PromptContextItem = ContextItem & { key: string }

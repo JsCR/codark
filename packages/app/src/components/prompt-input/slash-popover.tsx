@@ -3,7 +3,7 @@ import { FileIcon } from "@codark-ai/ui/file-icon"
 import { Icon } from "@codark-ai/ui/icon"
 import { Tag } from "@codark-ai/ui/v2/badge-v2"
 import { KeybindV2 } from "@codark-ai/ui/v2/keybind-v2"
-import { getDirectory, getFilename } from "@opencode-ai/core/util/path"
+import { getDirectory, getFilename } from "@codark-ai/core/util/path"
 
 export type AtOption =
   | { type: "agent"; name: string; display: string }

@@ -13,7 +13,7 @@
       "outputs": [],
       "passThroughEnv": ["*"]
     },
-    "@opencode-ai/core#test": {
+    "@codark-ai/core#test": {
       "dependsOn": ["^build"],
       "outputs": []
     },

@@ -1,4 +1,4 @@
-import { getFilename } from "@opencode-ai/core/util/path"
+import { getFilename } from "@codark-ai/core/util/path"
 import type { Project } from "@codark-ai/sdk/v2/client"
 import type { SessionInfo } from "@opencode-ai/client/promise"
 import { useDialog } from "@codark-ai/ui/context/dialog"

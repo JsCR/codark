@@ -1,5 +1,5 @@
 import { Message, Model, Part, Session, SnapshotFileDiff } from "@codark-ai/sdk/v2"
-import { iife } from "@opencode-ai/core/util/iife"
+import { iife } from "@codark-ai/core/util/iife"
 import z from "zod"
 import { Storage } from "./storage"
 

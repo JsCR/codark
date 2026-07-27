@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import { SessionEvent } from "@opencode-ai/core/session/event"
+import { SessionEvent } from "@codark-ai/core/session/event"
 import { EventManifest as SchemaEventManifest } from "@codark-ai/schema/event-manifest"
 import { Todo } from "@/session/todo"
 import { EventManifest } from "@/event-manifest"

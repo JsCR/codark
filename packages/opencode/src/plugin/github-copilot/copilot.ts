@@ -1,6 +1,6 @@
 import type { Hooks, PluginInput } from "@codark-ai/plugin"
 import type { Model } from "@codark-ai/sdk/v2"
-import { InstallationVersion } from "@opencode-ai/core/installation/version"
+import { InstallationVersion } from "@codark-ai/core/installation/version"
 import { iife } from "@/util/iife"
 import { setTimeout as sleep } from "node:timers/promises"
 import { CopilotModels } from "./models"

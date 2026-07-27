@@ -1,5 +1,5 @@
 import { bundledLanguagesInfo } from "shiki"
-import { getFilename } from "@opencode-ai/core/util/path"
+import { getFilename } from "@codark-ai/core/util/path"
 import type { FilePart } from "@codark-ai/sdk/v2"
 
 export function attached(part: FilePart) {

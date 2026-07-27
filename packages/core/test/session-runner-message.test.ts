@@ -1,12 +1,12 @@
 import { describe, expect, test } from "bun:test"
 import { Message, Model } from "@codark-ai/llm"
 import * as OpenAIChat from "@codark-ai/llm/protocols/openai-chat"
-import { ModelV2 } from "@opencode-ai/core/model"
-import { ProviderV2 } from "@opencode-ai/core/provider"
-import { SessionMessage } from "@opencode-ai/core/session/message"
-import { AgentAttachment, FileAttachment } from "@opencode-ai/core/session/prompt"
-import { toLLMMessages } from "@opencode-ai/core/session/runner/to-llm-message"
-import { SessionV2 } from "@opencode-ai/core/session"
+import { ModelV2 } from "@codark-ai/core/model"
+import { ProviderV2 } from "@codark-ai/core/provider"
+import { SessionMessage } from "@codark-ai/core/session/message"
+import { AgentAttachment, FileAttachment } from "@codark-ai/core/session/prompt"
+import { toLLMMessages } from "@codark-ai/core/session/runner/to-llm-message"
+import { SessionV2 } from "@codark-ai/core/session"
 import { DateTime } from "effect"
 
 const created = DateTime.makeUnsafe(0)

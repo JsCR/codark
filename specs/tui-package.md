@@ -24,7 +24,7 @@ packages/cli --------/
 The TUI may directly depend on terminal and UI infrastructure such as
 `@opentui/core`, `@opentui/solid`, `@opentui/keymap`, `solid-js`, Effect, and
 generic presentation libraries. It must not depend on `packages/opencode`,
-`packages/cli`, or `@opencode-ai/core`.
+`packages/cli`, or `@codark-ai/core`.
 
 The SDK is the TUI's OpenCode boundary. Missing backend data or operations must
 be added to the server API and generated SDK rather than imported from backend
@@ -43,7 +43,7 @@ implementation modules.
   size or conflict risk of a section. Mark them for removal in a later section.
 - Do not preserve private imports by creating aliases from `packages/tui` back
   into `packages/opencode`.
-- Do not replace private `packages/opencode` imports with `@opencode-ai/core`
+- Do not replace private `packages/opencode` imports with `@codark-ai/core`
   imports merely to make the package compile.
 - Keep tool rendering tolerant of unknown tools and wire-format changes. Local
   checks over `unknown` input and metadata are acceptable; importing backend
@@ -145,7 +145,7 @@ Exit criteria:
 - `packages/tui` typechecks independently.
 - Its test command runs from `packages/tui`.
 - The package has no dependency on `opencode`, `@opencode-ai/cli`, or
-  `@opencode-ai/core`.
+  `@codark-ai/core`.
 
 Checkpoint commit:
 
@@ -472,7 +472,7 @@ Exit criteria:
 
 - `packages/tui` contains the canonical application root.
 - The package has no imports from `packages/opencode`, `packages/cli`, or
-  `@opencode-ai/core`.
+  `@codark-ai/core`.
 - The package public API is sufficient for both old and new CLI adapters.
 
 Checkpoint commit:
@@ -547,7 +547,7 @@ Tasks:
 Exit criteria:
 
 - No production import references the old TUI source location.
-- No source under `packages/tui` imports `@/...`, `@opencode-ai/core`, or either
+- No source under `packages/tui` imports `@/...`, `@codark-ai/core`, or either
   executable package.
 - The old TUI directory contains no canonical implementation files.
 - The dependency graph has no cycle.
@@ -595,7 +595,7 @@ Dependency checks:
 
 ```text
 rg "from ['\"]@/" packages/tui/src
-rg '@opencode-ai/core|packages/opencode|packages/cli' packages/tui
+rg '@codark-ai/core|packages/opencode|packages/cli' packages/tui
 rg 'src/cli/cmd/tui|@tui/' packages/opencode/src packages/opencode/test
 ```
 

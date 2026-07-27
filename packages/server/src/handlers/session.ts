@@ -1,4 +1,4 @@
-import { SessionV2 } from "@opencode-ai/core/session"
+import { SessionV2 } from "@codark-ai/core/session"
 import { DateTime, Effect, Stream } from "effect"
 import { HttpApiBuilder, HttpApiSchema } from "effect/unstable/httpapi"
 import { Api } from "../api"
@@ -11,7 +11,7 @@ import {
   SessionNotFoundError,
   UnknownError,
 } from "@codark-ai/protocol/errors"
-import { AbsolutePath } from "@opencode-ai/core/schema"
+import { AbsolutePath } from "@codark-ai/core/schema"
 
 const DefaultSessionsLimit = 50
 const DefaultSessionHistoryLimit = 50

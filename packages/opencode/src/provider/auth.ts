@@ -1,11 +1,11 @@
-import { LayerNode } from "@opencode-ai/core/effect/layer-node"
+import { LayerNode } from "@codark-ai/core/effect/layer-node"
 import type { AuthOAuthResult, Hooks } from "@codark-ai/plugin"
-import { serviceUse } from "@opencode-ai/core/effect/service-use"
+import { serviceUse } from "@codark-ai/core/effect/service-use"
 import { Auth } from "@/auth"
 import { InstanceState } from "@/effect/instance-state"
-import { optional } from "@opencode-ai/core/schema"
+import { optional } from "@codark-ai/core/schema"
 import { Plugin } from "../plugin"
-import { ProviderV2 } from "@opencode-ai/core/provider"
+import { ProviderV2 } from "@codark-ai/core/provider"
 import { Array as Arr, Effect, Layer, Record, Result, Context, Schema } from "effect"
 
 const When = Schema.Struct({

@@ -48,7 +48,7 @@
     "./component/register-spinner": "./src/component/register-spinner.ts"
   },
   "dependencies": {
-    "@opencode-ai/core": "workspace:*",
+    "@codark-ai/core": "workspace:*",
     "@codark-ai/plugin": "workspace:*",
     "@codark-ai/sdk": "workspace:*",
     "@codark-ai/ui": "workspace:*",

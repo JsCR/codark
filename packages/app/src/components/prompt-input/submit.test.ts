@@ -137,7 +137,7 @@ beforeAll(async () => {
     showToast: () => 0,
   }))
 
-  mock.module("@opencode-ai/core/util/encode", () => ({
+  mock.module("@codark-ai/core/util/encode", () => ({
     base64Encode: (value: string) => value,
   }))
 

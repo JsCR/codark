@@ -1,4 +1,4 @@
-import { Binary } from "@opencode-ai/core/util/binary"
+import { Binary } from "@codark-ai/core/util/binary"
 import type { Message, Part, Session } from "@codark-ai/sdk/v2/client"
 import { createMemo } from "solid-js"
 import { produce, reconcile, type SetStoreFunction } from "solid-js/store"

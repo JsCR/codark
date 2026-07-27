@@ -1,4 +1,4 @@
-import { base64Encode } from "@opencode-ai/core/util/encode"
+import { base64Encode } from "@codark-ai/core/util/encode"
 import { Event } from "@codark-ai/schema/event"
 import { SessionStatusEvent } from "@codark-ai/schema/session-status-event"
 import { SessionV1 } from "@codark-ai/schema/session-v1"

@@ -1,10 +1,10 @@
-import { LayerNode } from "@opencode-ai/core/effect/layer-node"
-import { ConfigPermissionV1 } from "@opencode-ai/core/v1/config/permission"
+import { LayerNode } from "@codark-ai/core/effect/layer-node"
+import { ConfigPermissionV1 } from "@codark-ai/core/v1/config/permission"
 import { InstanceState } from "@/effect/instance-state"
-import { Wildcard } from "@opencode-ai/core/util/wildcard"
+import { Wildcard } from "@codark-ai/core/util/wildcard"
 import { Deferred, Effect, Layer, Context } from "effect"
 import os from "os"
-import { PermissionV1 } from "@opencode-ai/core/v1/permission"
+import { PermissionV1 } from "@codark-ai/core/v1/permission"
 import { EventV2Bridge } from "@/event-v2-bridge"
 
 export const Event = PermissionV1.Event

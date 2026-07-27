@@ -1,5 +1,5 @@
 import { createSimpleContext } from "@codark-ai/ui/context"
-import { base64Encode } from "@opencode-ai/core/util/encode"
+import { base64Encode } from "@codark-ai/core/util/encode"
 import { useParams } from "@solidjs/router"
 import { batch, createEffect, createMemo, startTransition } from "solid-js"
 import { createStore } from "solid-js/store"

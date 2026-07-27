@@ -1,4 +1,4 @@
-import { getFilename } from "@opencode-ai/core/util/path"
+import { getFilename } from "@codark-ai/core/util/path"
 import { useDialog } from "@codark-ai/ui/context/dialog"
 import { useMutation } from "@tanstack/solid-query"
 import { normalizeProjectInfo } from "@/context/global-sync/utils"

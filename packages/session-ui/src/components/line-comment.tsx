@@ -1,5 +1,5 @@
 import { useFilteredList } from "@codark-ai/ui/hooks"
-import { getDirectory, getFilename } from "@opencode-ai/core/util/path"
+import { getDirectory, getFilename } from "@codark-ai/core/util/path"
 import { createSignal, For, onMount, Show, splitProps, type JSX } from "solid-js"
 import { Button } from "@codark-ai/ui/button"
 import { FileIcon } from "@codark-ai/ui/file-icon"
