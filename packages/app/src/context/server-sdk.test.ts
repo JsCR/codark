@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
 import { adaptServerEvent, coalesceServerEvents, enqueueServerEvent, resumeStreamAfterPageShow } from "./server-sdk"
-import type { OpenCodeEvent } from "@opencode-ai/client/promise"
+import type { OpenCodeEvent } from "@codark-ai/client/promise"
 import type { Event } from "@codark-ai/sdk/v2/client"
 
 describe("resumeStreamAfterPageShow", () => {

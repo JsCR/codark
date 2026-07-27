@@ -1,7 +1,7 @@
 import { createEffect, onCleanup, type JSX } from "solid-js"
 import { makeEventListener } from "@solid-primitives/event-listener"
 import type { SnapshotFileDiff, VcsFileDiff } from "@codark-ai/sdk/v2"
-import type { FileDiffInfo } from "@opencode-ai/client/promise"
+import type { FileDiffInfo } from "@codark-ai/client/promise"
 import { SessionReview } from "@opencode-ai/session-ui/session-review"
 import type {
   SessionReviewCommentActions,

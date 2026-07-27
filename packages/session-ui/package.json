@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@kobalte/core": "catalog:",
-    "@opencode-ai/client": "file:../app/vendor/opencode-ai-client-1.17.13-v2.tgz",
+    "@codark-ai/client": "file:../app/vendor/opencode-ai-client-1.17.13-v2.tgz",
     "@codark-ai/core": "workspace:*",
     "@codark-ai/sdk": "workspace:*",
     "@codark-ai/ui": "workspace:*",

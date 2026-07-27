@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
 import type { retry } from "@codark-ai/core/util/retry"
-import type { OpenCodeEvent, SessionApi } from "@opencode-ai/client/promise"
+import type { OpenCodeEvent, SessionApi } from "@codark-ai/client/promise"
 import type { Message, OpencodeClient, Part, Session } from "@codark-ai/sdk/v2/client"
 import { createServerSession } from "./server-session"
 import type { ServerApi } from "@/utils/server"

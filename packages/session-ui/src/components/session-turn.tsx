@@ -4,7 +4,7 @@ import {
   Message as MessageType,
   Part as PartType,
 } from "@codark-ai/sdk/v2/client"
-import type { FileDiffInfo } from "@opencode-ai/client/promise"
+import type { FileDiffInfo } from "@codark-ai/client/promise"
 import type { SessionStatus } from "@codark-ai/sdk/v2"
 import { useData } from "../context"
 import { useFileComponent } from "@codark-ai/ui/context/file"

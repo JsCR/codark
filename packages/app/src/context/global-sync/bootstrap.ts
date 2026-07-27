@@ -22,7 +22,7 @@ import type {
   ReferenceListInput,
   ReferenceListOutput,
   SessionApi,
-} from "@opencode-ai/client/promise"
+} from "@codark-ai/client/promise"
 import { showToast } from "@/utils/toast"
 import { getFilename } from "@codark-ai/core/util/path"
 import { retry } from "@codark-ai/core/util/retry"

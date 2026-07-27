@@ -4,7 +4,7 @@ import type {
   SessionMessageInfo,
   SessionMessageShell,
   SessionMessageUser,
-} from "@opencode-ai/client/promise"
+} from "@codark-ai/client/promise"
 import type { AssistantMessage, FilePart, Message, Part, ToolPart, UserMessage } from "@codark-ai/sdk/v2"
 import { Option, Schema } from "effect"
 

@@ -1,11 +1,11 @@
-# @opencode-ai/client
+# @codark-ai/client
 
 Private generation target for clients derived directly from OpenCode's authoritative Effect `HttpApi`.
 
 ## Entrypoints
 
-- `@opencode-ai/client`: zero-Effect Promise client using `fetch`.
-- `@opencode-ai/client/effect`: rich Effect network client using an environment-provided `HttpClient`.
+- `@codark-ai/client`: zero-Effect Promise client using `fetch`.
+- `@codark-ai/client/effect`: rich Effect network client using an environment-provided `HttpClient`.
 
 The generated surface includes every standard HTTP group from Server's concrete API. The build compiler reads `@codark-ai/server/api`; the generated Effect runtime imports a client-local projection built from Protocol, with a generation-equivalence test preventing transport drift. Custom transports such as the PTY WebSocket connection remain outside the generic HTTP client. Run `bun run generate` after changing the contract and `bun run check:generated` to detect committed-output drift.
 
@@ -16,7 +16,7 @@ The Promise root remains structural and has no Core or Effect runtime dependency
 Effect consumers construct canonical decoded inputs:
 
 ```ts
-import { AbsolutePath, Location, OpenCode, Prompt } from "@opencode-ai/client/effect"
+import { AbsolutePath, Location, OpenCode, Prompt } from "@codark-ai/client/effect"
 
 const client = yield * OpenCode.make({ baseUrl: "https://opencode.example" })
 yield *

@@ -1,6 +1,6 @@
 import type { Message, Part, PermissionRequest, QuestionRequest, SessionStatus, Todo } from "@codark-ai/sdk/v2/client"
-import type { FileDiffInfo } from "@opencode-ai/client/promise"
-import type { SessionMessageInfo } from "@opencode-ai/client/promise"
+import type { FileDiffInfo } from "@codark-ai/client/promise"
+import type { SessionMessageInfo } from "@codark-ai/client/promise"
 
 export const SESSION_CACHE_LIMIT = 40
 

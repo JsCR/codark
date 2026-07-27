@@ -1,5 +1,5 @@
 import type { LspStatus } from "@codark-ai/sdk/v2/client"
-import type { McpServer } from "@opencode-ai/client/promise"
+import type { McpServer } from "@codark-ai/client/promise"
 
 export function hasNonBlockingServiceIssue(input: {
   mcp: Array<McpServer["status"]["status"]>

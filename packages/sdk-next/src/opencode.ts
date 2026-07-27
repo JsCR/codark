@@ -1,4 +1,4 @@
-import { OpenCode } from "@opencode-ai/client/effect"
+import { OpenCode } from "@codark-ai/client/effect"
 import { AppNodeBuilder } from "@codark-ai/core/effect/app-node-builder"
 import { LayerNode } from "@codark-ai/core/effect/layer-node"
 import { PermissionSaved } from "@codark-ai/core/permission/saved"

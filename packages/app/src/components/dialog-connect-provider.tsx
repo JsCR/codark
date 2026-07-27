@@ -1,4 +1,4 @@
-import type { IntegrationMethod, IntegrationOauthConnectOutput } from "@opencode-ai/client/promise"
+import type { IntegrationMethod, IntegrationOauthConnectOutput } from "@codark-ai/client/promise"
 import { Button } from "@codark-ai/ui/button"
 import { useDialog } from "@codark-ai/ui/context/dialog"
 import { Dialog } from "@codark-ai/ui/dialog"

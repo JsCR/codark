@@ -1,4 +1,4 @@
-import type { SessionMessageInfo } from "@opencode-ai/client/promise"
+import type { SessionMessageInfo } from "@codark-ai/client/promise"
 import type { AssistantMessage, Message, Part, SessionStatus, UserMessage } from "@codark-ai/sdk/v2"
 import { createMemo, type Accessor } from "solid-js"
 import { reuseTimelineRows } from "./row-reconciliation"

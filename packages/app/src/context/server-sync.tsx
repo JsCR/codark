@@ -56,7 +56,7 @@ import type {
   McpResourceCatalogOutput,
   McpServer,
   SessionActiveOutput,
-} from "@opencode-ai/client/promise"
+} from "@codark-ai/client/promise"
 import { toggleMcp } from "./global-sync/mcp"
 import { createServerSession, type ServerSession } from "./server-session"
 

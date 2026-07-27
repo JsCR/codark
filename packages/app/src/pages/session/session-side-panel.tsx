@@ -24,7 +24,7 @@ import { IconButtonV2 } from "@codark-ai/ui/v2/icon-button-v2"
 import { KeybindV2 } from "@codark-ai/ui/v2/keybind-v2"
 import { TooltipV2 } from "@codark-ai/ui/v2/tooltip-v2"
 import type { SnapshotFileDiff, VcsFileDiff } from "@codark-ai/sdk/v2"
-import type { FileDiffInfo } from "@opencode-ai/client/promise"
+import type { FileDiffInfo } from "@codark-ai/client/promise"
 import { ConstrainDragYAxis, getDraggableId } from "@/utils/solid-dnd"
 import { useDialog } from "@codark-ai/ui/context/dialog"
 

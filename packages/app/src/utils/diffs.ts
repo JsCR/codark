@@ -1,5 +1,5 @@
 import type { SnapshotFileDiff, VcsFileDiff } from "@codark-ai/sdk/v2"
-import type { FileDiffInfo } from "@opencode-ai/client/promise"
+import type { FileDiffInfo } from "@codark-ai/client/promise"
 import type { Message } from "@codark-ai/sdk/v2/client"
 
 type Diff = FileDiffInfo | SnapshotFileDiff | VcsFileDiff
