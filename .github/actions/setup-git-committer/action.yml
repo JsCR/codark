@@ -1,11 +1,11 @@
 name: "Setup Git Committer"
 description: "Create app token and configure git user"
 inputs:
-  opencode-app-id:
-    description: "OpenCode GitHub App ID"
+  codark-app-id:
+    description: "Codark GitHub App ID"
     required: true
-  opencode-app-secret:
-    description: "OpenCode GitHub App private key"
+  codark-app-secret:
+    description: "Codark GitHub App private key"
     required: true
 outputs:
   token:
