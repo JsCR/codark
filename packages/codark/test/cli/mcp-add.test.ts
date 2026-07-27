@@ -3,12 +3,12 @@ import { Effect } from "effect"
 import path from "path"
 import { cliIt } from "../lib/cli-process"
 
-describe("opencode mcp add (non-interactive subprocess)", () => {
+describe("codark mcp add (non-interactive subprocess)", () => {
   cliIt.concurrent(
     "adds a remote server with HTTP headers",
-    ({ home, opencode }) =>
+    ({ home, codark }) =>
       Effect.gen(function* () {
-        const result = yield* opencode.spawn([
+        const result = yield* codark.spawn([
           "mcp",
           "add",
           "github",
@@ -19,10 +19,10 @@ describe("opencode mcp add (non-interactive subprocess)", () => {
           "--header",
           "X-Option=one=two",
         ])
-        opencode.expectExit(result, 0)
+        codark.expectExit(result, 0)
 
         const config = yield* Effect.promise(() =>
-          Bun.file(path.join(home, ".config", "opencode", "codark.json")).json(),
+          Bun.file(path.join(home, ".config", "codark", "codark.json")).json(),
         )
         expect(config.mcp.github).toEqual({
           type: "remote",
@@ -38,9 +38,9 @@ describe("opencode mcp add (non-interactive subprocess)", () => {
 
   cliIt.concurrent(
     "adds a local server while preserving argv and environment values",
-    ({ home, opencode }) =>
+    ({ home, codark }) =>
       Effect.gen(function* () {
-        const result = yield* opencode.spawn([
+        const result = yield* codark.spawn([
           "mcp",
           "add",
           "local",
@@ -55,10 +55,10 @@ describe("opencode mcp add (non-interactive subprocess)", () => {
           "--label",
           "two words",
         ])
-        opencode.expectExit(result, 0)
+        codark.expectExit(result, 0)
 
         const config = yield* Effect.promise(() =>
-          Bun.file(path.join(home, ".config", "opencode", "codark.json")).json(),
+          Bun.file(path.join(home, ".config", "codark", "codark.json")).json(),
         )
         expect(config.mcp.local).toEqual({
           type: "local",
