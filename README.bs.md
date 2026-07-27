@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="packages/console/app/src/asset/opencraft-banner.jpg" alt="openCraft banner">
+  <img src="packages/console/app/src/asset/codark-banner.jpg" alt="Codark banner">
 </p>
 
 <p align="center">
@@ -7,11 +7,11 @@
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
-      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="OpenCode logo">
+      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="Codark logo">
     </picture>
   </a>
 </p>
-<p align="center">OpenCode je open source AI agent za programiranje.</p>
+<p align="center">Codark je open source AI agent za programiranje.</p>
 <p align="center">
   <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
   <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
@@ -43,7 +43,7 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![Codark Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
 
 ---
 
@@ -70,7 +70,7 @@ nix run nixpkgs#opencode           # ili github:anomalyco/opencode za najnoviji 
 
 ### Desktop aplikacija (BETA)
 
-OpenCode je dostupan i kao desktop aplikacija. Preuzmi je direktno sa [stranice izdanja](https://github.com/anomalyco/opencode/releases) ili sa [opencode.ai/download](https://opencode.ai/download).
+Codark je dostupan i kao desktop aplikacija. Preuzmi je direktno sa [stranice izdanja](https://github.com/anomalyco/opencode/releases) ili sa [opencode.ai/download](https://opencode.ai/download).
 
 | Platforma             | Preuzimanje                        |
 | --------------------- | ---------------------------------- |
@@ -103,7 +103,7 @@ XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
 
 ### Agenti
 
-OpenCode uključuje dva ugrađena agenta između kojih možeš prebacivati tasterom `Tab`.
+Codark uključuje dva ugrađena agenta između kojih možeš prebacivati tasterom `Tab`.
 
 - **build** - Podrazumijevani agent sa punim pristupom za razvoj
 - **plan** - Agent samo za čitanje za analizu i istraživanje koda
@@ -118,15 +118,15 @@ Saznaj više o [agentima](https://opencode.ai/docs/agents).
 
 ### Dokumentacija
 
-Za više informacija o konfiguraciji OpenCode-a, [**pogledaj dokumentaciju**](https://opencode.ai/docs).
+Za više informacija o konfiguraciji Codark-a, [**pogledaj dokumentaciju**](https://opencode.ai/docs).
 
 ### Doprinosi
 
-Ako želiš doprinositi OpenCode-u, pročitaj [upute za doprinošenje](./CONTRIBUTING.md) prije slanja pull requesta.
+Ako želiš doprinositi Codark-u, pročitaj [upute za doprinošenje](./CONTRIBUTING.md) prije slanja pull requesta.
 
-### Gradnja na OpenCode-u
+### Gradnja na Codark-u
 
-Ako radiš na projektu koji je povezan s OpenCode-om i koristi "opencode" kao dio naziva, npr. "opencode-dashboard" ili "opencode-mobile", dodaj napomenu u svoj README da projekat nije napravio OpenCode tim i da nije povezan s nama.
+Ako radiš na projektu koji je povezan s Codark-om i koristi "opencode" kao dio naziva, npr. "opencode-dashboard" ili "opencode-mobile", dodaj napomenu u svoj README da projekat nije napravio Codark tim i da nije povezan s nama.
 
 ---
 

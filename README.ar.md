@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="packages/console/app/src/asset/opencraft-banner.jpg" alt="openCraft banner">
+  <img src="packages/console/app/src/asset/codark-banner.jpg" alt="Codark banner">
 </p>
 
 <p align="center">
@@ -7,7 +7,7 @@
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
-      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="شعار OpenCode">
+      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="شعار Codark">
     </picture>
   </a>
 </p>
@@ -43,7 +43,7 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![Codark Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
 
 ---
 
@@ -70,7 +70,7 @@ nix run nixpkgs#opencode           # او github:anomalyco/opencode لاحدث �
 
 ### تطبيق سطح المكتب (BETA)
 
-يتوفر OpenCode ايضا كتطبيق سطح مكتب. قم بالتنزيل مباشرة من [صفحة الاصدارات](https://github.com/anomalyco/opencode/releases) او من [opencode.ai/download](https://opencode.ai/download).
+يتوفر Codark ايضا كتطبيق سطح مكتب. قم بالتنزيل مباشرة من [صفحة الاصدارات](https://github.com/anomalyco/opencode/releases) او من [opencode.ai/download](https://opencode.ai/download).
 
 | المنصة                | التنزيل                            |
 | --------------------- | ---------------------------------- |
@@ -103,7 +103,7 @@ XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
 
 ### Agents
 
-يتضمن OpenCode وكيليْن (Agents) مدمجين يمكنك التبديل بينهما باستخدام زر `Tab`.
+يتضمن Codark وكيليْن (Agents) مدمجين يمكنك التبديل بينهما باستخدام زر `Tab`.
 
 - **build** - الافتراضي، وكيل بصلاحيات كاملة لاعمال التطوير
 - **plan** - وكيل للقراءة فقط للتحليل واستكشاف الكود
@@ -118,15 +118,15 @@ XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
 
 ### التوثيق
 
-لمزيد من المعلومات حول كيفية ضبط OpenCode، [**راجع التوثيق**](https://opencode.ai/docs).
+لمزيد من المعلومات حول كيفية ضبط Codark، [**راجع التوثيق**](https://opencode.ai/docs).
 
 ### المساهمة
 
-اذا كنت مهتما بالمساهمة في OpenCode، يرجى قراءة [contributing docs](./CONTRIBUTING.md) قبل ارسال pull request.
+اذا كنت مهتما بالمساهمة في Codark، يرجى قراءة [contributing docs](./CONTRIBUTING.md) قبل ارسال pull request.
 
-### البناء فوق OpenCode
+### البناء فوق Codark
 
-اذا كنت تعمل على مشروع مرتبط بـ OpenCode ويستخدم "opencode" كجزء من اسمه (مثل "opencode-dashboard" او "opencode-mobile")، يرجى اضافة ملاحظة في README توضح انه ليس مبنيا بواسطة فريق OpenCode ولا يرتبط بنا بأي شكل.
+اذا كنت تعمل على مشروع مرتبط بـ Codark ويستخدم "opencode" كجزء من اسمه (مثل "opencode-dashboard" او "opencode-mobile")، يرجى اضافة ملاحظة في README توضح انه ليس مبنيا بواسطة فريق Codark ولا يرتبط بنا بأي شكل.
 
 ---
 

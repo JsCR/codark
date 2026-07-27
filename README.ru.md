@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="packages/console/app/src/asset/opencraft-banner.jpg" alt="openCraft banner">
+  <img src="packages/console/app/src/asset/codark-banner.jpg" alt="Codark banner">
 </p>
 
 <p align="center">
@@ -7,7 +7,7 @@
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
-      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="OpenCode logo">
+      <img src="packages/console/app/src/asset/logo-ornate-light.svg" alt="Codark logo">
     </picture>
   </a>
 </p>
@@ -43,7 +43,7 @@
   <a href="README.vi.md">Tiếng Việt</a>
 </p>
 
-[![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
+[![Codark Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
 
 ---
 
@@ -70,7 +70,7 @@ nix run nixpkgs#opencode           # или github:anomalyco/opencode для с�
 
 ### Десктопное приложение (BETA)
 
-OpenCode также доступен как десктопное приложение. Скачайте его со [страницы релизов](https://github.com/anomalyco/opencode/releases) или с [opencode.ai/download](https://opencode.ai/download).
+Codark также доступен как десктопное приложение. Скачайте его со [страницы релизов](https://github.com/anomalyco/opencode/releases) или с [opencode.ai/download](https://opencode.ai/download).
 
 | Платформа             | Загрузка                           |
 | --------------------- | ---------------------------------- |
@@ -103,7 +103,7 @@ XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
 
 ### Agents
 
-В OpenCode есть два встроенных агента, между которыми можно переключаться клавишей `Tab`.
+В Codark есть два встроенных агента, между которыми можно переключаться клавишей `Tab`.
 
 - **build** - По умолчанию, агент с полным доступом для разработки
 - **plan** - Агент только для чтения для анализа и изучения кода
@@ -118,15 +118,15 @@ XDG_BIN_DIR=$HOME/.local/bin curl -fsSL https://opencode.ai/install | bash
 
 ### Документация
 
-Больше информации о том, как настроить OpenCode: [**наши docs**](https://opencode.ai/docs).
+Больше информации о том, как настроить Codark: [**наши docs**](https://opencode.ai/docs).
 
 ### Вклад
 
-Если вы хотите внести вклад в OpenCode, прочитайте [contributing docs](./CONTRIBUTING.md) перед тем, как отправлять pull request.
+Если вы хотите внести вклад в Codark, прочитайте [contributing docs](./CONTRIBUTING.md) перед тем, как отправлять pull request.
 
-### Разработка на базе OpenCode
+### Разработка на базе Codark
 
-Если вы делаете проект, связанный с OpenCode, и используете "opencode" как часть имени (например, "opencode-dashboard" или "opencode-mobile"), добавьте примечание в README, чтобы уточнить, что проект не создан командой OpenCode и не аффилирован с нами.
+Если вы делаете проект, связанный с Codark, и используете "opencode" как часть имени (например, "opencode-dashboard" или "opencode-mobile"), добавьте примечание в README, чтобы уточнить, что проект не создан командой Codark и не аффилирован с нами.
 
 ---
 
