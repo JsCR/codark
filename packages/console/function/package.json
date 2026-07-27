@@ -1,5 +1,5 @@
 {
-  "name": "@opencode-ai/console-function",
+  "name": "@codark-ai/console-function",
   "version": "1.18.5",
   "$schema": "https://json.schemastore.org/package.json",
   "private": true,
