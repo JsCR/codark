@@ -281,7 +281,7 @@ export default function () {
                             <div class="flex gap-3 items-center">
                               <IconButton
                                 as={"a"}
-                                href="https://github.com/anomalyco/opencode"
+                                href="https://github.com/codark-ai/codark"
                                 target="_blank"
                                 icon="github"
                                 variant="ghost"

@@ -105,7 +105,7 @@ for (const item of targets) {
         name: `@codark-ai/${name}`,
         version: Script.version,
         license: "MIT",
-        repository: { type: "git", url: "git+https://github.com/anomalyco/opencode.git" },
+        repository: { type: "git", url: "git+https://github.com/codark-ai/codark.git" },
         os: [item.os],
         cpu: [item.arch],
       },
