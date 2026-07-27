@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import { Message, Model } from "@opencode-ai/llm"
-import * as OpenAIChat from "@opencode-ai/llm/protocols/openai-chat"
+import { Message, Model } from "@codark-ai/llm"
+import * as OpenAIChat from "@codark-ai/llm/protocols/openai-chat"
 import { ModelV2 } from "@opencode-ai/core/model"
 import { ProviderV2 } from "@opencode-ai/core/provider"
 import { SessionMessage } from "@opencode-ai/core/session/message"

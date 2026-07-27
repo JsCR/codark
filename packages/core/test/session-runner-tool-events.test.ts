@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test"
 import { Effect, Schema, Stream } from "effect"
-import { LLMEvent } from "@opencode-ai/llm"
+import { LLMEvent } from "@codark-ai/llm"
 import { EventV2 } from "@opencode-ai/core/event"
 import { SessionEvent } from "@opencode-ai/core/session/event"
 import { SessionMessage } from "@opencode-ai/core/session/message"

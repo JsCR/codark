@@ -1,6 +1,6 @@
 export * as ApplyPatchTool from "./apply-patch"
 
-import { ToolFailure } from "@opencode-ai/llm"
+import { ToolFailure } from "@codark-ai/llm"
 import { FileDiff } from "@codark-ai/schema/file-diff"
 import { createTwoFilesPatch, diffLines } from "diff"
 import { Effect, Layer, Schema } from "effect"

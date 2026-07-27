@@ -85,7 +85,7 @@
     "@octokit/rest": "catalog:",
     "@openauthjs/openauth": "catalog:",
     "@codark-ai/codemode": "workspace:*",
-    "@opencode-ai/llm": "workspace:*",
+    "@codark-ai/llm": "workspace:*",
     "@opencode-ai/plugin": "workspace:*",
     "@codark-ai/protocol": "workspace:*",
     "@codark-ai/schema": "workspace:*",
