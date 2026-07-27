@@ -16,7 +16,7 @@
   "dependencies": {
     "@aws-sdk/client-firehose": "3.933.0",
     "@effect/platform-node": "catalog:",
-    "@opencode-ai/stats-core": "workspace:*",
+    "@codark-ai/stats-core": "workspace:*",
     "effect": "catalog:",
     "sst": "catalog:"
   },

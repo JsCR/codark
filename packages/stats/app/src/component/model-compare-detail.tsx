@@ -5,8 +5,8 @@ import {
   type ModelUsagePoint,
   type StatsModelComparisonInput,
   type StatsModelComparisonEntry,
-} from "@opencode-ai/stats-core/domain/home"
-import { runtime } from "@opencode-ai/stats-core/runtime"
+} from "@codark-ai/stats-core/domain/home"
+import { runtime } from "@codark-ai/stats-core/runtime"
 import { createAsync, query, useParams, useSearchParams } from "@solidjs/router"
 import { createEffect, createMemo, createSignal, For, onMount, Show } from "solid-js"
 import { getRequestEvent } from "solid-js/web"

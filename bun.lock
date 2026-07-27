@@ -856,9 +856,9 @@
       "name": "@opencode-ai/stats-app",
       "version": "1.18.5",
       "dependencies": {
+        "@codark-ai/stats-core": "workspace:*",
         "@ibm/plex": "6.4.1",
         "@kobalte/core": "catalog:",
-        "@opencode-ai/stats-core": "workspace:*",
         "@opencode-ai/ui": "workspace:*",
         "@solidjs/meta": "catalog:",
         "@solidjs/router": "catalog:",
@@ -887,7 +887,7 @@
       },
     },
     "packages/stats/core": {
-      "name": "@opencode-ai/stats-core",
+      "name": "@codark-ai/stats-core",
       "version": "1.18.5",
       "dependencies": {
         "@aws-sdk/client-athena": "3.933.0",
@@ -910,8 +910,8 @@
       "version": "1.18.5",
       "dependencies": {
         "@aws-sdk/client-firehose": "3.933.0",
+        "@codark-ai/stats-core": "workspace:*",
         "@effect/platform-node": "catalog:",
-        "@opencode-ai/stats-core": "workspace:*",
         "effect": "catalog:",
         "sst": "catalog:",
       },
@@ -1484,6 +1484,8 @@
 
     "@codark-ai/function": ["@codark-ai/function@workspace:packages/function"],
 
+    "@codark-ai/stats-core": ["@codark-ai/stats-core@workspace:packages/stats/core"],
+
     "@codark-ai/web": ["@codark-ai/web@workspace:packages/web"],
 
     "@corvu/dialog": ["@corvu/dialog@0.2.4", "", { "dependencies": { "@corvu/utils": "~0.4.2", "solid-dismissible": "~0.1.1", "solid-focus-trap": "~0.1.8", "solid-presence": "~0.2.0", "solid-prevent-scroll": "~0.1.10" }, "peerDependencies": { "solid-js": "^1.8" } }, "sha512-n54vJq+fOy8GVrnYBdJpD6JXNuyx7LOeMrRxwzAvZnYGpW8+AA12tnb/P/2emJj/HjOO5otheGKb0breshdFlA=="],
@@ -2003,8 +2005,6 @@
     "@opencode-ai/slack": ["@opencode-ai/slack@workspace:packages/slack"],
 
     "@opencode-ai/stats-app": ["@opencode-ai/stats-app@workspace:packages/stats/app"],
-
-    "@opencode-ai/stats-core": ["@opencode-ai/stats-core@workspace:packages/stats/core"],
 
     "@opencode-ai/stats-server": ["@opencode-ai/stats-server@workspace:packages/stats/server"],
 
