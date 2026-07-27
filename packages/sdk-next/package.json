@@ -14,7 +14,7 @@
   "dependencies": {
     "@opencode-ai/client": "workspace:*",
     "@codark-ai/core": "workspace:*",
-    "@opencode-ai/server": "workspace:*",
+    "@codark-ai/server": "workspace:*",
     "effect": "catalog:"
   },
   "devDependencies": {

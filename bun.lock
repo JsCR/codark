@@ -103,8 +103,8 @@
       "dependencies": {
         "@codark-ai/core": "workspace:*",
         "@codark-ai/sdk": "workspace:*",
+        "@codark-ai/server": "workspace:*",
         "@effect/platform-node": "catalog:",
-        "@opencode-ai/server": "workspace:*",
         "@opencode-ai/tui": "workspace:*",
         "@opentui/core": "catalog:",
         "@opentui/solid": "catalog:",
@@ -128,8 +128,8 @@
       "devDependencies": {
         "@codark-ai/core": "workspace:*",
         "@codark-ai/httpapi-codegen": "workspace:*",
+        "@codark-ai/server": "workspace:*",
         "@effect/platform-node": "catalog:",
-        "@opencode-ai/server": "workspace:*",
         "@tsconfig/bun": "catalog:",
         "@types/bun": "catalog:",
         "@typescript/native-preview": "catalog:",
@@ -595,6 +595,7 @@
         "@codark-ai/schema": "workspace:*",
         "@codark-ai/script": "workspace:*",
         "@codark-ai/sdk": "workspace:*",
+        "@codark-ai/server": "workspace:*",
         "@effect/opentelemetry": "catalog:",
         "@effect/platform-node": "catalog:",
         "@ff-labs/fff-bun": "0.9.4",
@@ -603,7 +604,6 @@
         "@octokit/graphql": "9.0.2",
         "@octokit/rest": "catalog:",
         "@openauthjs/openauth": "catalog:",
-        "@opencode-ai/server": "workspace:*",
         "@opencode-ai/tui": "workspace:*",
         "@openrouter/ai-sdk-provider": "2.9.0",
         "@opentelemetry/api": "1.9.0",
@@ -754,8 +754,8 @@
       "name": "@codark-ai/sdk-next",
       "dependencies": {
         "@codark-ai/core": "workspace:*",
+        "@codark-ai/server": "workspace:*",
         "@opencode-ai/client": "workspace:*",
-        "@opencode-ai/server": "workspace:*",
         "effect": "catalog:",
       },
       "devDependencies": {
@@ -780,7 +780,7 @@
       },
     },
     "packages/server": {
-      "name": "@opencode-ai/server",
+      "name": "@codark-ai/server",
       "version": "1.18.5",
       "dependencies": {
         "@codark-ai/core": "workspace:*",
@@ -1512,6 +1512,8 @@
 
     "@codark-ai/sdk-next": ["@codark-ai/sdk-next@workspace:packages/sdk-next"],
 
+    "@codark-ai/server": ["@codark-ai/server@workspace:packages/server"],
+
     "@codark-ai/slack": ["@codark-ai/slack@workspace:packages/slack"],
 
     "@codark-ai/stats-core": ["@codark-ai/stats-core@workspace:packages/stats/core"],
@@ -2003,8 +2005,6 @@
     "@opencode-ai/desktop": ["@opencode-ai/desktop@workspace:packages/desktop"],
 
     "@opencode-ai/enterprise": ["@opencode-ai/enterprise@workspace:packages/enterprise"],
-
-    "@opencode-ai/server": ["@opencode-ai/server@workspace:packages/server"],
 
     "@opencode-ai/session-ui": ["@opencode-ai/session-ui@workspace:packages/session-ui"],
 

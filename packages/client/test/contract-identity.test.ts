@@ -17,7 +17,7 @@ import { Session } from "@codark-ai/schema/session"
 import { SessionInput } from "@codark-ai/schema/session-input"
 import { SessionMessage } from "@codark-ai/schema/session-message"
 import { Workspace } from "@codark-ai/schema/workspace"
-import { Api } from "@opencode-ai/server/api"
+import { Api } from "@codark-ai/server/api"
 import { compile, emitPromise } from "@codark-ai/httpapi-codegen"
 import { ClientApi, endpointNames, groupNames, omitEndpoints } from "../src/contract"
 

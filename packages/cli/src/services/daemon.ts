@@ -1,7 +1,7 @@
 import { Global } from "@codark-ai/core/global"
 import { InstallationVersion } from "@codark-ai/core/installation/version"
 import { createOpencodeClient } from "@codark-ai/sdk/v2/client"
-import { ServerAuth } from "@opencode-ai/server/auth"
+import { ServerAuth } from "@codark-ai/server/auth"
 import { Context, Effect, FileSystem, Layer, Option, Schedule, Schema, Scope } from "effect"
 import { HttpServer } from "effect/unstable/http"
 import { randomBytes, randomUUID } from "crypto"

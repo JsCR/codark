@@ -10,7 +10,7 @@ import { LocationServiceMap, locationServiceMapLayer } from "@codark-ai/core/loc
 import { Location } from "@codark-ai/core/location"
 import { AbsolutePath } from "@codark-ai/core/schema"
 import { Shell } from "@codark-ai/core/shell"
-import { CorsConfig, isAllowedRequestOrigin, type CorsOptions } from "@opencode-ai/server/cors"
+import { CorsConfig, isAllowedRequestOrigin, type CorsOptions } from "@codark-ai/server/cors"
 import {
   PTY_CONNECT_TICKET_QUERY,
   PTY_CONNECT_TOKEN_HEADER,

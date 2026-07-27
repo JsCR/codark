@@ -3,7 +3,7 @@ import { AppNodeBuilder } from "@codark-ai/core/effect/app-node-builder"
 import { LayerNode } from "@codark-ai/core/effect/layer-node"
 import { PermissionSaved } from "@codark-ai/core/permission/saved"
 import { ApplicationTools } from "@codark-ai/core/tool/application-tools"
-import { createEmbeddedRoutes } from "@opencode-ai/server/routes"
+import { createEmbeddedRoutes } from "@codark-ai/server/routes"
 import { Context, Effect, Layer, Scope } from "effect"
 import { FetchHttpClient, HttpRouter, HttpServer } from "effect/unstable/http"
 

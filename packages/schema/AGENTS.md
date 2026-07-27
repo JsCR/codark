@@ -4,7 +4,7 @@
 
 ## Package Boundary
 
-- Preserve the dependency direction: `@codark-ai/schema <- @codark-ai/protocol <- @opencode-ai/server`.
+- Preserve the dependency direction: `@codark-ai/schema <- @codark-ai/protocol <- @codark-ai/server`.
 - Schema values should be serializable contract definitions, not service implementations or runtime registries.
 - A domain may keep a minimal public wire contract here when SDK generation needs it, but do not move the broader runtime model into Schema just because an event is public. `plugin.added` is the current example: Schema may own the minimum browser-safe event payload, while plugin runtime behavior stays outside Schema.
 - The root barrel exports canonical current domain contracts. Specialized event modules, manifests, infrastructure modules, and V1 contracts use direct entrypoints instead of becoming first-class root exports.

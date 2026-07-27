@@ -30,7 +30,7 @@
     "@effect/platform-node": "catalog:",
     "@codark-ai/core": "workspace:*",
     "@codark-ai/httpapi-codegen": "workspace:*",
-    "@opencode-ai/server": "workspace:*",
+    "@codark-ai/server": "workspace:*",
     "@tsconfig/bun": "catalog:",
     "@types/bun": "catalog:",
     "@typescript/native-preview": "catalog:",
