@@ -1,33 +1,50 @@
 name: "Setup Git Committer"
-description: "Create app token and configure git user"
+description: "Create app token and configure git user (falls back to GITHUB_TOKEN when no app credentials)"
 inputs:
   codark-app-id:
-    description: "Codark GitHub App ID"
-    required: true
+    description: "Codark GitHub App ID (optional; GITHUB_TOKEN used when empty)"
+    required: false
   codark-app-secret:
-    description: "Codark GitHub App private key"
-    required: true
+    description: "Codark GitHub App private key (optional; GITHUB_TOKEN used when empty)"
+    required: false
 outputs:
   token:
-    description: "GitHub App token"
-    value: ${{ steps.apptoken.outputs.token }}
+    description: "Token for git/release operations (GitHub App token, or GITHUB_TOKEN fallback)"
+    value: ${{ steps.resolve.outputs.token }}
   app-slug:
-    description: "GitHub App slug"
-    value: ${{ steps.apptoken.outputs.app-slug }}
+    description: "Bot slug for the git user"
+    value: ${{ steps.resolve.outputs.app-slug }}
 runs:
   using: "composite"
   steps:
     - name: Create app token
       id: apptoken
+      if: ${{ inputs.codark-app-id != '' && inputs.codark-app-secret != '' }}
       uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2.2.2
       with:
         app-id: ${{ inputs.codark-app-id }}
         private-key: ${{ inputs.codark-app-secret }}
         owner: ${{ github.repository_owner }}
 
+    - name: Resolve token and slug
+      id: resolve
+      shell: bash
+      env:
+        APP_TOKEN: ${{ steps.apptoken.outputs.token }}
+        APP_SLUG: ${{ steps.apptoken.outputs.app-slug }}
+        FALLBACK_TOKEN: ${{ github.token }}
+      run: |
+        if [ -n "$APP_TOKEN" ]; then
+          echo "token=$APP_TOKEN" >> "$GITHUB_OUTPUT"
+          echo "app-slug=$APP_SLUG" >> "$GITHUB_OUTPUT"
+        else
+          echo "token=$FALLBACK_TOKEN" >> "$GITHUB_OUTPUT"
+          echo "app-slug=github-actions" >> "$GITHUB_OUTPUT"
+        fi
+
     - name: Configure git user
       run: |
-        slug="${{ steps.apptoken.outputs.app-slug }}"
+        slug="${{ steps.resolve.outputs.app-slug }}"
         git config --global user.name "${slug}[bot]"
         git config --global user.email "${slug}[bot]@users.noreply.github.com"
       shell: bash
@@ -39,5 +56,5 @@ runs:
 
     - name: Configure git remote
       run: |
-        git remote set-url origin https://x-access-token:${{ steps.apptoken.outputs.token }}@github.com/${{ github.repository }}
+        git remote set-url origin https://x-access-token:${{ steps.resolve.outputs.token }}@github.com/${{ github.repository }}
       shell: bash
