@@ -23,6 +23,8 @@
 | 6 | AI 生成发布说明 | `script/version.ts` | `changelog.ts`（调 LLM）失败时容错，改用 `git log --oneline -30` | 在 CI 配可用的模型 provider 密钥（原 `OPENCODE_API_KEY` 是上游 Zen 付费服务，不可用） |
 | 7 | changelog CLI 来源 | publish.yml version job | 不再 `bun i -g codark`（npm 无包），改用 shim 从源码跑 `packages/codark` | 首发后 codark 已上 npm，可恢复安装上一版稳定 CLI（也可保留现状） |
 | 8 | macOS 窗口原生插件 `mac_window.node`（Swift） | `electron-builder.config.ts` extraResources | `packages/desktop/native` 不存在则跳过打包（fork 内无该插件源码） | 补上 Swift 插件的源码/构建链；目录出现后自动恢复 |
+| 9 | Homebrew tap 更新 | `packages/codark/script/publish.ts` brew 段 | 上游推到 `anomalyco/homebrew-tap`（403 无权限）；现改为 `HOMEBREW_TAP_REPO` 未设置则跳过；formula 名 `opencode.rb`→`codark.rb` | 建 `codark-ai/homebrew-tap` 仓库 + 配跨仓库写权限 token（GITHUB_TOKEN 默认只管本仓），并设 `HOMEBREW_TAP_REPO=codark-ai/homebrew-tap` |
+| 10 | AUR 发布（archlinux） | `packages/codark/script/publish.ts` AUR 段 | `AUR_ENABLED !== "true"` 则整段跳过 | 配 `AUR_KEY`(ssh) secret + `AUR_ENABLED=true`，并创建 `codark-bin` AUR 包 |
 
 ## 三、环境替换类（非屏蔽，是永久改动）
 
