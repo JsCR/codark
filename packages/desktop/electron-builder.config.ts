@@ -71,11 +71,14 @@ const getBase = (appId: string): Configuration => ({
     gatekeeperAssess: false,
     entitlements: "resources/entitlements.plist",
     entitlementsInherit: "resources/entitlements.plist",
-    notarize: true,
+    // Skip codesign when no certificate is injected (CSC_LINK empty/absent),
+    // and notarize only when the API key file was actually written.
+    ...(process.env.CSC_LINK ? {} : { identity: null }),
+    notarize: !!process.env.APPLE_API_KEY && fs.existsSync(process.env.APPLE_API_KEY),
     target: ["dmg", "zip"],
   },
   dmg: {
-    sign: true,
+    sign: !!process.env.CSC_LINK,
   },
   protocols: {
     name: "Codark",
