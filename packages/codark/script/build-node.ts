@@ -24,7 +24,7 @@ await Bun.build({
     CODARK_CHANNEL: `'${Script.channel}'`,
   },
   files: {
-    "opencode-web-ui.gen.ts": "",
+    "codark-web-ui.gen.ts": "",
   },
 })
 
