@@ -51,7 +51,7 @@ jobs:
 
       - name: Install Codark
         if: inputs.bump || inputs.version
-        run: bun i -g codark
+        run: bun i -g codark || bun i -g ./packages/codark
 
       - id: version
         run: |
