@@ -6,7 +6,7 @@
 
 ## 代码智能（MCP）
 
-本仓库已被两个 MCP 服务索引。做代码探索时**优先用它们，而不是 `grep`/`find`**：
+本仓库已被两个 MCP 服务索引。做代码探索时**如果未使用过 `codegraph` `codebase-memory` ，则禁止使用 `grep`/`find`**：
 
 - `codegraph`（LSP 级）：用 `codegraph_search`/`codegraph_node` 找符号定义，`codegraph_callers`/`codegraph_callees` 追调用链，`codegraph_explore` 在改动前勘察一片区域，`codegraph_impact` 做爆炸半径分析。
 - `codebase-memory`（知识图谱）：用 `search_graph`/`search_code` 做 BM25 与语义搜索，`get_architecture` 看模块全景，`trace_path` 追调用方/影响面/数据流，`query_graph` 跑多跳模式查询。
