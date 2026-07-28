@@ -50,9 +50,11 @@ await $`bun ./packages/plugin/script/publish.ts`
 console.log("\n=== ui ===\n")
 await $`bun ./packages/ui/script/publish.ts`
 
-if (Script.release) {
+if (Script.release && process.env.TAURI_SIGNING_PRIVATE_KEY) {
   await $`bun ./packages/desktop/scripts/finalize-latest-json.ts`
   await $`bun ./packages/desktop/scripts/finalize-latest-yml.ts`
+} else if (Script.release) {
+  console.log("skip tauri updater manifest signing (TAURI_SIGNING_PRIVATE_KEY unset)")
 }
 
 if (Script.release && !Script.preview) {
