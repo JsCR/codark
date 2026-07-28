@@ -124,7 +124,10 @@ if (!Script.preview) {
     "",
   ].join("\n")
 
-  for (const [pkg, pkgbuild] of [["codark-bin", binaryPkgbuild]]) {
+  if (process.env.AUR_ENABLED !== "true") {
+    console.log("skip AUR publish (AUR_ENABLED != true)")
+  }
+  for (const [pkg, pkgbuild] of (process.env.AUR_ENABLED === "true" ? [["codark-bin", binaryPkgbuild]] : [])) {
     for (let i = 0; i < 30; i++) {
       try {
         await $`rm -rf ./dist/aur-${pkg}`
@@ -197,15 +200,16 @@ if (!Script.preview) {
   ].join("\n")
 
   const token = process.env.GITHUB_TOKEN
-  if (!token) {
-    console.error("GITHUB_TOKEN is required to update homebrew tap")
-    process.exit(1)
+  const tapRepo = process.env.HOMEBREW_TAP_REPO
+  if (!token || !tapRepo) {
+    console.log("skip homebrew tap (GITHUB_TOKEN or HOMEBREW_TAP_REPO unset)")
+    return
   }
-  const tap = `https://x-access-token:${token}@github.com/anomalyco/homebrew-tap.git`
+  const tap = `https://x-access-token:${token}@github.com/${tapRepo}.git`
   await $`rm -rf ./dist/homebrew-tap`
   await $`git clone ${tap} ./dist/homebrew-tap`
-  await Bun.file("./dist/homebrew-tap/opencode.rb").write(homebrewFormula)
-  await $`cd ./dist/homebrew-tap && git add opencode.rb`
+  await Bun.file("./dist/homebrew-tap/codark.rb").write(homebrewFormula)
+  await $`cd ./dist/homebrew-tap && git add codark.rb`
   if ((await $`cd ./dist/homebrew-tap && git diff --cached --quiet`.nothrow()).exitCode !== 0) {
     await $`cd ./dist/homebrew-tap && git commit -m "Update to v${Script.version}"`
     await $`cd ./dist/homebrew-tap && git push`
