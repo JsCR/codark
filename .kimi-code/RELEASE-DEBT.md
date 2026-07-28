@@ -25,6 +25,7 @@
 | 8 | macOS 窗口原生插件 `mac_window.node`（Swift） | `electron-builder.config.ts` extraResources | `packages/desktop/native` 不存在则跳过打包（fork 内无该插件源码） | 补上 Swift 插件的源码/构建链；目录出现后自动恢复 |
 | 9 | Homebrew tap 更新 | `packages/codark/script/publish.ts` brew 段 | 上游推到 `anomalyco/homebrew-tap`（403 无权限）；现改为 `HOMEBREW_TAP_REPO` 未设置则跳过；formula 名 `opencode.rb`→`codark.rb` | 建 `codark-ai/homebrew-tap` 仓库 + 配跨仓库写权限 token（GITHUB_TOKEN 默认只管本仓），并设 `HOMEBREW_TAP_REPO=codark-ai/homebrew-tap` |
 | 10 | AUR 发布（archlinux） | `packages/codark/script/publish.ts` AUR 段 | `AUR_ENABLED !== "true"` 则整段跳过 | 配 `AUR_KEY`(ssh) secret + `AUR_ENABLED=true`，并创建 `codark-bin` AUR 包 |
+| 11 | Tauri updater 清单签名（latest.json/latest.yml） | `script/publish.ts` finalize 段 | `TAURI_SIGNING_PRIVATE_KEY` 未设置则跳过签名（**桌面端自动更新不可用**） | 生成 Tauri updater 密钥对，配 `TAURI_SIGNING_PRIVATE_KEY` + `_PASSWORD`，并把公钥内置进桌面端 |
 
 ## 三、环境替换类（非屏蔽，是永久改动）
 
