@@ -16,6 +16,9 @@ const signScript = path.join(rootDir, "script", "sign-windows.ps1")
 const legacyDesktopEntry = path.join(packageDir, "resources", "linux", "codark-desktop.desktop")
 const legacyDesktopEntryFpm = `${legacyDesktopEntry}=/usr/share/applications/codark-desktop.desktop`
 
+const metainfoFpm = (appId: string) =>
+  `${path.join(packageDir, "resources", `${appId}.metainfo.xml`)}=/usr/share/metainfo/${appId}.metainfo.xml`
+
 async function signWindows(configuration: { path: string }) {
   if (process.platform !== "win32") return
   if (process.env.GITHUB_ACTIONS !== "true") return
@@ -123,7 +126,8 @@ function getConfig() {
         ...base,
         appId,
         productName: "Codark Dev",
-        rpm: { packageName: "codark-dev" },
+        deb: { fpm: [metainfoFpm(appId)] },
+        rpm: { packageName: "codark-dev", fpm: [metainfoFpm(appId)] },
       }
     }
     case "beta": {
@@ -133,7 +137,8 @@ function getConfig() {
         productName: "Codark Beta",
         protocols: { name: "Codark Beta", schemes: ["codark"] },
         publish: { provider: "github", owner: "codark-ai", repo: "codark-beta", channel: "latest" },
-        rpm: { packageName: "codark-beta" },
+        deb: { fpm: [metainfoFpm(appId)] },
+        rpm: { packageName: "codark-beta", fpm: [metainfoFpm(appId)] },
       }
     }
     case "prod": {
@@ -143,8 +148,8 @@ function getConfig() {
         productName: "Codark",
         protocols: { name: "Codark", schemes: ["codark"] },
         publish: { provider: "github", owner: "codark-ai", repo: "codark", channel: "latest" },
-        deb: { fpm: [legacyDesktopEntryFpm] },
-        rpm: { packageName: "codark", fpm: [legacyDesktopEntryFpm] },
+        deb: { fpm: [metainfoFpm(appId), legacyDesktopEntryFpm] },
+        rpm: { packageName: "codark", fpm: [metainfoFpm(appId), legacyDesktopEntryFpm] },
       }
     }
   }
