@@ -527,7 +527,6 @@ jobs:
           AUR_KEY: ${{ secrets.AUR_KEY }}
           GITHUB_TOKEN: ${{ steps.committer.outputs.token }}
           GH_REPO: ${{ needs.version.outputs.repo }}
-          NPM_CONFIG_PROVENANCE: false
           LATEST_YML_DIR: /tmp/latest-yml
           RELEASE_BRANCH: codark-dev
           TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
