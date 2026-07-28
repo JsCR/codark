@@ -29,7 +29,7 @@
     },
     "packages/app": {
       "name": "@codark-ai/app",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@codark-ai/client": "file:vendor/opencode-ai-client-1.17.13-v2.tgz",
         "@codark-ai/core": "workspace:*",
@@ -96,7 +96,7 @@
     },
     "packages/cli": {
       "name": "@codark-ai/cli",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "bin": {
         "lildax": "./bin/lildax.cjs",
       },
@@ -144,7 +144,7 @@
     },
     "packages/codark": {
       "name": "codark",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "bin": {
         "codark": "./bin/opencode",
       },
@@ -276,7 +276,7 @@
     },
     "packages/codemode": {
       "name": "@codark-ai/codemode",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "acorn": "8.15.0",
         "effect": "catalog:",
@@ -290,7 +290,7 @@
     },
     "packages/console/app": {
       "name": "@codark-ai/console-app",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@cloudflare/vite-plugin": "1.15.2",
         "@codark-ai/console-core": "workspace:*",
@@ -326,7 +326,7 @@
     },
     "packages/console/core": {
       "name": "@codark-ai/console-core",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@aws-sdk/client-sts": "3.782.0",
         "@codark-ai/console-mail": "workspace:*",
@@ -353,7 +353,7 @@
     },
     "packages/console/function": {
       "name": "@codark-ai/console-function",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@ai-sdk/anthropic": "3.0.82",
         "@ai-sdk/openai": "3.0.48",
@@ -375,7 +375,7 @@
     },
     "packages/console/mail": {
       "name": "@codark-ai/console-mail",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@jsx-email/all": "2.2.3",
         "@jsx-email/cli": "1.4.3",
@@ -399,7 +399,7 @@
     },
     "packages/console/support": {
       "name": "@codark-ai/console-support",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@cloudflare/vite-plugin": "1.15.2",
         "@codark-ai/console-core": "workspace:*",
@@ -419,7 +419,7 @@
     },
     "packages/core": {
       "name": "@codark-ai/core",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "bin": {
         "opencode": "./bin/opencode",
       },
@@ -513,7 +513,7 @@
     },
     "packages/desktop": {
       "name": "@codark-ai/desktop",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@zip.js/zip.js": "2.7.62",
         "effect": "catalog:",
@@ -567,7 +567,7 @@
     },
     "packages/effect-drizzle-sqlite": {
       "name": "@codark-ai/effect-drizzle-sqlite",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "drizzle-orm": "catalog:",
         "effect": "catalog:",
@@ -581,7 +581,7 @@
     },
     "packages/effect-sqlite-node": {
       "name": "@codark-ai/effect-sqlite-node",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "effect": "catalog:",
       },
@@ -593,7 +593,7 @@
     },
     "packages/enterprise": {
       "name": "@codark-ai/enterprise",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@codark-ai/core": "workspace:*",
         "@codark-ai/session-ui": "workspace:*",
@@ -625,7 +625,7 @@
     },
     "packages/function": {
       "name": "@codark-ai/function",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@octokit/auth-app": "8.0.1",
         "@octokit/rest": "catalog:",
@@ -641,7 +641,7 @@
     },
     "packages/http-recorder": {
       "name": "@codark-ai/http-recorder",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@effect/platform-node": "4.0.0-beta.83",
         "@effect/platform-node-shared": "4.0.0-beta.83",
@@ -672,7 +672,7 @@
     },
     "packages/llm": {
       "name": "@codark-ai/llm",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@codark-ai/schema": "workspace:*",
         "@smithy/eventstream-codec": "4.2.14",
@@ -691,7 +691,7 @@
     },
     "packages/plugin": {
       "name": "@codark-ai/plugin",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@ai-sdk/provider": "3.0.8",
         "@codark-ai/sdk": "workspace:*",
@@ -767,7 +767,7 @@
     },
     "packages/sdk/js": {
       "name": "@codark-ai/sdk",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "cross-spawn": "catalog:",
       },
@@ -782,7 +782,7 @@
     },
     "packages/server": {
       "name": "@codark-ai/server",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@codark-ai/core": "workspace:*",
         "@codark-ai/protocol": "workspace:*",
@@ -797,7 +797,7 @@
     },
     "packages/session-ui": {
       "name": "@codark-ai/session-ui",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@codark-ai/client": "file:../app/vendor/opencode-ai-client-1.17.13-v2.tgz",
         "@codark-ai/core": "workspace:*",
@@ -842,7 +842,7 @@
     },
     "packages/slack": {
       "name": "@codark-ai/slack",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@codark-ai/sdk": "workspace:*",
         "@slack/bolt": "^3.17.1",
@@ -855,7 +855,7 @@
     },
     "packages/stats/app": {
       "name": "@codark-ai/stats-app",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@codark-ai/stats-core": "workspace:*",
         "@codark-ai/ui": "workspace:*",
@@ -889,7 +889,7 @@
     },
     "packages/stats/core": {
       "name": "@codark-ai/stats-core",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@aws-sdk/client-athena": "3.933.0",
         "@planetscale/database": "1.19.0",
@@ -908,7 +908,7 @@
     },
     "packages/stats/server": {
       "name": "@codark-ai/stats-server",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@aws-sdk/client-firehose": "3.933.0",
         "@codark-ai/stats-core": "workspace:*",
@@ -950,7 +950,7 @@
     },
     "packages/tui": {
       "name": "@codark-ai/tui",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@codark-ai/core": "workspace:*",
         "@codark-ai/plugin": "workspace:*",
@@ -977,7 +977,7 @@
     },
     "packages/ui": {
       "name": "@codark-ai/ui",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@kobalte/core": "catalog:",
         "@pierre/diffs": "catalog:",
@@ -1028,7 +1028,7 @@
     },
     "packages/web": {
       "name": "@codark-ai/web",
-      "version": "2.0.0",
+      "version": "2.0.1",
       "dependencies": {
         "@astrojs/cloudflare": "12.6.3",
         "@astrojs/markdown-remark": "6.3.1",
@@ -3512,7 +3512,7 @@
 
     "dns-packet": ["dns-packet@5.6.1", "", { "dependencies": { "@leichtgewicht/ip-codec": "^2.0.1" } }, "sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw=="],
 
-    "dom-accessibility-api": ["dom-accessibility-api@0.5.16", "", {}, "sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg=="],
+    "dom-accessibility-api": ["dom-accessibility-api@0.6.3", "", {}, "sha512-7ZgogeTnjuHbo+ct10G9Ffp0mif17idi0IyWNVA/wcwcm7NPOD/WEHVP3n7n3MhXqxoIYm8d6MuZohYWIZ4T3w=="],
 
     "dom-serializer": ["dom-serializer@2.0.0", "", { "dependencies": { "domelementtype": "^2.3.0", "domhandler": "^5.0.2", "entities": "^4.2.0" } }, "sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg=="],
 
@@ -6090,7 +6090,7 @@
 
     "@testing-library/dom/aria-query": ["aria-query@5.3.0", "", { "dependencies": { "dequal": "^2.0.3" } }, "sha512-b0P0sZPKtyu8HkeRAfCq0IfURZK+SuwMjY1UXGBU27wpAiTwQAIlq56IbIO+ytk/JjS1fMR14ee5WBBfKi5J6A=="],
 
-    "@testing-library/jest-dom/dom-accessibility-api": ["dom-accessibility-api@0.6.3", "", {}, "sha512-7ZgogeTnjuHbo+ct10G9Ffp0mif17idi0IyWNVA/wcwcm7NPOD/WEHVP3n7n3MhXqxoIYm8d6MuZohYWIZ4T3w=="],
+    "@testing-library/dom/dom-accessibility-api": ["dom-accessibility-api@0.5.16", "", {}, "sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg=="],
 
     "@vitest/expect/@vitest/utils": ["@vitest/utils@3.2.4", "", { "dependencies": { "@vitest/pretty-format": "3.2.4", "loupe": "^3.1.4", "tinyrainbow": "^2.0.0" } }, "sha512-fB2V0JFrQSMsCo9HiSq3Ezpdv4iYaXRG1Sx8edX3MwxfyNn83mKiGzOcH+Fkxt4MHxr3y42fQi1oeAInqgX2QA=="],
 
