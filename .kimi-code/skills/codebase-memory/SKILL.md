@@ -40,3 +40,9 @@ codebase-memory-mcp cli index_status '{"repo_path": "/data/dev/codark"}'
 - 索引可能滞后于最新改动：改动较多时先 `index_status` 看新鲜度，必要时重新 `index_repository`（该工具索引后是增量 auto-sync）。
 - 图谱结果与代码冲突时，以代码为准（Read 验证）。
 - 本仓库关键结构：TUI 在 `packages/tui`（OpenTUI/Solid，非 Ink），后端 `packages/codark` + `packages/core` + `packages/server`，API 契约见 `packages/client`（生成代码，勿手改）。
+
+## 排障（2026-07-28 实证）
+
+- **索引停摆（auto-sync 失效）**：表象是新增内容搜不到、`index_status` 节点数不涨但 head_sha 最新。根因：**跨天 stale MCP 进程**（`ps aux | grep codebase-memory` 里启动日期不是今天的）占用准入屏障，coordination daemon 的 watcher 起不来。修复：kill 非当天的 stale 进程（保留当天活跃会话），watcher 即恢复（实测增量 <1 分钟）；存量 backlog 用 `index_repository` 手动回填——watcher 管新增不管历史，无需重装。
+- **判断要不要重装**：先 `ps` 看 stale 进程 → 手动 `codebase-memory-mcp` 跑一次看有没有 `watcher.start` → 都正常仍不行再考虑 `uninstall` 重装。
+- **被质问工具问题时**：先如实报告工具健康状态（好/坏/降级），再谈使用习惯——不要把"工具坏了"轻描淡写成"忘了用"。
