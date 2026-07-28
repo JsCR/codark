@@ -59,9 +59,14 @@ if (Script.release && process.env.TAURI_SIGNING_PRIVATE_KEY) {
 
 if (Script.release && !Script.preview) {
   await $`git commit -am "release: ${tag}"`
-  await $`git tag -d ${tag}`.nothrow()
-  await $`git tag ${tag}`
-  await $`git push origin refs/tags/${tag} --force-with-lease --no-verify`
+  const remoteTag = (await $`git ls-remote --tags origin ${tag}`.text()).trim()
+  if (remoteTag) {
+    console.log(`tag ${tag} already exists on origin, skipping tag recreation`)
+  } else {
+    await $`git tag -d ${tag}`.nothrow()
+    await $`git tag ${tag}`
+    await $`git push origin refs/tags/${tag} --force-with-lease --no-verify`
+  }
   await new Promise((resolve) => setTimeout(resolve, 5_000))
   await $`git fetch origin`
   const releaseBranch = process.env.RELEASE_BRANCH ?? "dev"
