@@ -49,9 +49,14 @@ jobs:
           codark-app-id: ${{ vars.CODARK_APP_ID }}
           codark-app-secret: ${{ secrets.CODARK_APP_SECRET }}
 
-      - name: Install Codark
+      - name: Install Codark (from source)
         if: inputs.bump || inputs.version
-        run: bun i -g codark || bun i -g ./packages/codark
+        shell: bash
+        run: |
+          mkdir -p "$HOME/.bun/bin"
+          printf '#!/usr/bin/env bash\nexec bun run --cwd "%s/packages/codark" --conditions=browser src/index.ts "$@"\n' "$GITHUB_WORKSPACE" > "$HOME/.bun/bin/codark"
+          chmod +x "$HOME/.bun/bin/codark"
+          echo "$HOME/.bun/bin" >> "$GITHUB_PATH"
 
       - id: version
         run: |
