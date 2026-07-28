@@ -7,10 +7,10 @@ ENV BUN_RUNTIME_TRANSPILER_CACHE_PATH=${BUN_RUNTIME_TRANSPILER_CACHE_PATH}
 RUN apk add libgcc libstdc++ ripgrep
 
 FROM base AS build-amd64
-COPY dist/codark-linux-x64-baseline-musl/bin/codark /usr/local/bin/opencode
+COPY dist/codark-linux-x64-baseline-musl/bin/codark /usr/local/bin/codark
 
 FROM base AS build-arm64
-COPY dist/codark-linux-arm64-musl/bin/codark /usr/local/bin/opencode
+COPY dist/codark-linux-arm64-musl/bin/codark /usr/local/bin/codark
 
 ARG TARGETARCH
 FROM build-${TARGETARCH}
