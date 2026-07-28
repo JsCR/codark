@@ -203,15 +203,15 @@ if (!Script.preview) {
   const tapRepo = process.env.HOMEBREW_TAP_REPO
   if (!token || !tapRepo) {
     console.log("skip homebrew tap (GITHUB_TOKEN or HOMEBREW_TAP_REPO unset)")
-    return
-  }
-  const tap = `https://x-access-token:${token}@github.com/${tapRepo}.git`
-  await $`rm -rf ./dist/homebrew-tap`
-  await $`git clone ${tap} ./dist/homebrew-tap`
-  await Bun.file("./dist/homebrew-tap/codark.rb").write(homebrewFormula)
-  await $`cd ./dist/homebrew-tap && git add codark.rb`
-  if ((await $`cd ./dist/homebrew-tap && git diff --cached --quiet`.nothrow()).exitCode !== 0) {
-    await $`cd ./dist/homebrew-tap && git commit -m "Update to v${Script.version}"`
-    await $`cd ./dist/homebrew-tap && git push`
+  } else {
+    const tap = `https://x-access-token:${token}@github.com/${tapRepo}.git`
+    await $`rm -rf ./dist/homebrew-tap`
+    await $`git clone ${tap} ./dist/homebrew-tap`
+    await Bun.file("./dist/homebrew-tap/codark.rb").write(homebrewFormula)
+    await $`cd ./dist/homebrew-tap && git add codark.rb`
+    if ((await $`cd ./dist/homebrew-tap && git diff --cached --quiet`.nothrow()).exitCode !== 0) {
+      await $`cd ./dist/homebrew-tap && git commit -m "Update to v${Script.version}"`
+      await $`cd ./dist/homebrew-tap && git push`
+    }
   }
 }
