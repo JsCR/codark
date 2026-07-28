@@ -3,7 +3,7 @@ import { defineConfig } from "electron-vite"
 import appPlugin from "@codark-ai/app/vite"
 import * as fs from "node:fs/promises"
 
-const CODARK_SERVER_DIST = "../opencode/dist/node"
+const CODARK_SERVER_DIST = "../codark/dist/node"
 
 const channel = (() => {
   const raw = process.env.CODARK_CHANNEL
