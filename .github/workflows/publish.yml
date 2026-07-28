@@ -389,7 +389,7 @@ jobs:
           tar -czf "$OUT_NAME" -C "$(dirname "$APP_PATH")" "$(basename "$APP_PATH")"
 
       - name: Verify signed Windows Electron artifacts
-        if: runner.os == 'Windows'
+        if: runner.os == 'Windows' && env.AZURE_CLIENT_ID != ''
         shell: pwsh
         run: |
           $files = @()
