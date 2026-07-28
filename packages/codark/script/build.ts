@@ -220,6 +220,8 @@ for (const item of targets) {
       {
         name,
         version: Script.version,
+        license: "MIT",
+        repository: { type: "git", url: "git+https://github.com/codark-ai/codark.git" },
         preferUnplugged: true,
         os: [item.os],
         cpu: [item.arch],
