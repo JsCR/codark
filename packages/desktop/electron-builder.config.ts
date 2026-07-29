@@ -19,9 +19,6 @@ const legacyDesktopEntryFpm = `${legacyDesktopEntry}=/usr/share/applications/cod
 const metainfoFpm = (appId: string) =>
   `${path.join(packageDir, "resources", `${appId}.metainfo.xml`)}=/usr/share/metainfo/${appId}.metainfo.xml`
 
-const metainfoFpm = (appId: string) =>
-  `${path.join(packageDir, "resources", `${appId}.metainfo.xml`)}=/usr/share/metainfo/${appId}.metainfo.xml`
-
 async function signWindows(configuration: { path: string }) {
   if (process.platform !== "win32") return
   if (process.env.GITHUB_ACTIONS !== "true") return
@@ -59,7 +56,7 @@ const getBase = (appId: string): Configuration => ({
   extraMetadata: {
     desktopName: `${appId}.desktop`,
   },
-  files: ["out/**/*", "resources/**/*", "!resources/opencode-cli*"],
+  files: ["out/**/*", "resources/**/*", "!resources/codark-cli*"],
   // mac_window Swift addon is optional; only bundle when the native dir exists
   extraResources: [
     ...(channel === "dev"
@@ -67,7 +64,7 @@ const getBase = (appId: string): Configuration => ({
           {
             from: "resources/",
             to: "",
-            filter: ["opencode-cli*"],
+            filter: ["codark-cli*"],
           },
         ]
       : []),
