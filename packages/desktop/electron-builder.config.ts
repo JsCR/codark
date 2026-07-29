@@ -19,6 +19,9 @@ const legacyDesktopEntryFpm = `${legacyDesktopEntry}=/usr/share/applications/cod
 const metainfoFpm = (appId: string) =>
   `${path.join(packageDir, "resources", `${appId}.metainfo.xml`)}=/usr/share/metainfo/${appId}.metainfo.xml`
 
+const metainfoFpm = (appId: string) =>
+  `${path.join(packageDir, "resources", `${appId}.metainfo.xml`)}=/usr/share/metainfo/${appId}.metainfo.xml`
+
 async function signWindows(configuration: { path: string }) {
   if (process.platform !== "win32") return
   if (process.env.GITHUB_ACTIONS !== "true") return
@@ -56,17 +59,28 @@ const getBase = (appId: string): Configuration => ({
   extraMetadata: {
     desktopName: `${appId}.desktop`,
   },
-  files: ["out/**/*", "resources/**/*"],
+  files: ["out/**/*", "resources/**/*", "!resources/opencode-cli*"],
   // mac_window Swift addon is optional; only bundle when the native dir exists
-  extraResources: fs.existsSync(path.join(packageDir, "native"))
-    ? [
-        {
-          from: "native/",
-          to: "native/",
-          filter: ["index.js", "index.d.ts", "build/Release/mac_window.node", "swift-build/**"],
-        },
-      ]
-    : [],
+  extraResources: [
+    ...(channel === "dev"
+      ? [
+          {
+            from: "resources/",
+            to: "",
+            filter: ["opencode-cli*"],
+          },
+        ]
+      : []),
+    ...(fs.existsSync(path.join(packageDir, "native"))
+      ? [
+          {
+            from: "native/",
+            to: "native/",
+            filter: ["index.js", "index.d.ts", "build/Release/mac_window.node", "swift-build/**"],
+          },
+        ]
+      : []),
+  ],
   mac: {
     category: "public.app-category.developer-tools",
     icon: `resources/icons/icon.icns`,
