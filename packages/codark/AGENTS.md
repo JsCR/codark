@@ -4,6 +4,7 @@
 
 - **Schema**: Drizzle schema lives in `packages/core/src/**/*.sql.ts`.
 - **Migrations**: database migrations live in `packages/core` and are applied by core.
+- **Channel-based file naming**: the SQLite file is selected by `InstallationChannel` (build-time constant from `packages/script/src/index.ts`, derived from git branch). Default channels (`latest`, `beta`, `prod`) and `CODARK_DISABLE_CHANNEL_DB=1` use `codark.db`; all other channels use `codark-{channel}.db`. `CODARK_DB` env var overrides the filename entirely. See `packages/core/src/database/database.ts` `path()`.
 
 ## Development server
 
