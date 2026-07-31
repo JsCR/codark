@@ -19,6 +19,10 @@
 
 示例：`session-recovery`、`fix-scroll-state`、`regenerate-sdk`。
 
+验证完成并合并到 `codark-dev`（非上游 `dev`）的功能分支应删除，避免分支堆积。
+
+开发分支是 `codark-dev`。`dev` 是上游原版 OpenCode，只读，只能 pull，不能改动。
+
 ## 提交与 PR 标题
 
 使用约定式提交格式：`type(scope): summary`。
