@@ -211,6 +211,7 @@ export const run = Effect.fn("Tui.run")(function* (input: TuiInput) {
             destroyRenderer(renderer)
           }),
       )
+      renderer.setCursorStyle({ style: input.config.cursor_shape === "beam" ? "line" : input.config.cursor_shape })
       win32DisableProcessedInput()
       const keymap = createDefaultOpenTuiKeymap(renderer)
       yield* Effect.acquireRelease(
