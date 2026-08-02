@@ -441,6 +441,7 @@ export function QuestionPrompt(props: { request: QuestionRequest; directory?: st
                         textColor={theme.text}
                         focusedTextColor={theme.text}
                         cursorColor={theme.primary}
+                        cursorStyle={{ style: tuiConfig.cursor_shape, blinking: true }}
                       />
                     </box>
                   </Show>
