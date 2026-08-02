@@ -36,3 +36,4 @@ tsconfig.tsbuildinfo
 # Agent tooling local data
 .kimi-code/
 .codegraph/
+.trae/
