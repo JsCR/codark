@@ -1,5 +1,6 @@
 export * as TuiConfig from "."
 
+import type { CursorStyle } from "@opentui/core"
 import { createBindingLookup } from "@opentui/keymap/extras"
 import { Schema } from "effect"
 import { createContext, type JSX, useContext } from "solid-js"
@@ -86,7 +87,7 @@ export type Resolved = Omit<Info, "attention" | "keybinds" | "leader_timeout" | 
   keybinds: TuiKeybind.BindingLookupView
   leader_timeout: number
   mouse: boolean
-  cursor_shape: CursorShape
+  cursor_shape: CursorStyle
 }
 
 export const ResolveOptions = Schema.Struct({
@@ -122,7 +123,7 @@ export function resolve(input: Info, options: ResolveOptions): Resolved {
     }),
     leader_timeout: input.leader_timeout ?? LeaderTimeoutDefault,
     mouse: input.mouse ?? true,
-    cursor_shape: input.cursor_shape ?? "block",
+    cursor_shape: input.cursor_shape === "beam" ? "line" : (input.cursor_shape ?? "block"),
   }
 }
 

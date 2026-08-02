@@ -1436,6 +1436,7 @@ export function Prompt(props: PromptProps) {
               onMouseDown={(r: MouseEvent) => r.target?.focus()}
               focusedBackgroundColor={theme.backgroundElement}
               cursorColor={props.disabled ? theme.backgroundElement : theme.text}
+              cursorStyle={{ style: tuiConfig.cursor_shape, blinking: true }}
               syntaxStyle={syntax()}
             />
             <box flexDirection="row" flexShrink={0} paddingTop={1} gap={1} justifyContent="space-between">
