@@ -193,8 +193,9 @@ export const run = Effect.fn("Tui.run")(function* (input: TuiInput) {
           try: () =>
             createCliRenderer({
               externalOutputMode: "passthrough",
-              targetFps: 60,
-              gatherStats: false,
+              targetFps: input.config.target_fps,
+              maxFps: input.config.target_fps,
+              gatherStats: true,
               exitOnCtrlC: false,
               useKittyKeyboard: {},
               autoFocus: false,
@@ -211,7 +212,6 @@ export const run = Effect.fn("Tui.run")(function* (input: TuiInput) {
             destroyRenderer(renderer)
           }),
       )
-      renderer.setCursorStyle({ style: input.config.cursor_shape })
       win32DisableProcessedInput()
       const keymap = createDefaultOpenTuiKeymap(renderer)
       yield* Effect.acquireRelease(

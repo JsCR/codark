@@ -24,6 +24,9 @@ export const LeaderTimeout = Schema.Int.check(Schema.isGreaterThan(0)).annotate(
 })
 
 export const ScrollSpeed = Schema.Number.check(Schema.isGreaterThanOrEqualTo(0.001))
+export const TargetFps = Schema.Int.check(Schema.isGreaterThan(0)).annotate({
+  description: "Render frame rate cap applied to both target and max fps (default: 60, SSH sessions: 30)",
+})
 export const ScrollAcceleration = Schema.Struct({
   enabled: Schema.Boolean.annotate({ description: "Enable scroll acceleration" }),
 }).annotate({ description: "Scroll acceleration settings" })
@@ -72,10 +75,11 @@ export const Info = Schema.Struct({
   diff_style: Schema.optional(DiffStyle),
   cursor: Schema.optional(Cursor),
   mouse: Schema.optional(Schema.Boolean).annotate({ description: "Enable or disable mouse capture (default: true)" }),
+  target_fps: Schema.optional(TargetFps).annotate({ description: "Render frame rate cap (default: 60)" }),
 })
 export type Info = Schema.Schema.Type<typeof Info>
 
-export type Resolved = Omit<Info, "attention" | "keybinds" | "leader_timeout" | "mouse" | "cursor"> & {
+export type Resolved = Omit<Info, "attention" | "keybinds" | "leader_timeout" | "mouse" | "cursor" | "target_fps"> & {
   attention: {
     enabled: boolean
     notifications: boolean
@@ -87,6 +91,7 @@ export type Resolved = Omit<Info, "attention" | "keybinds" | "leader_timeout" | 
   keybinds: TuiKeybind.BindingLookupView
   leader_timeout: number
   mouse: boolean
+  target_fps: number
   cursor?: {
     style: "block" | "underline" | "line" | "default"
     blinking: boolean
@@ -126,6 +131,9 @@ export function resolve(input: Info, options: ResolveOptions): Resolved {
     }),
     leader_timeout: input.leader_timeout ?? LeaderTimeoutDefault,
     mouse: input.mouse ?? true,
+    // SSH 会话默认锁 30fps：全屏真彩色重绘经 SSH 转发后终端来不及消化，
+    // 高帧率反而逐行渲染。显式配置优先。
+    target_fps: input.target_fps ?? (process.env.SSH_CLIENT || process.env.SSH_TTY ? 30 : 60),
     cursor: input.cursor
       ? {
           style: input.cursor.style ?? "block",
