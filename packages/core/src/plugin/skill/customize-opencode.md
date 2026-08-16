@@ -40,7 +40,7 @@ already-loaded config until then.
 | Scope                         | Path                                                                                                                      |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Project config                | `./codark.json`, `./codark.jsonc`, or `.codark/codark.json` (opencode walks up from the cwd to the worktree root) |
-| Global config                 | `~/.config/opencode/codark.json` (NOT `~/.codark/`)                                                                   |
+| Global config                 | `~/.config/opencode/codark.json` or `~/.config/opencode/codark.jsonc` (NOT `~/.codark/`)                                                                   |
 | Project agents                | `.codark/agent/<name>.md` or `.codark/agents/<name>.md`                                                               |
 | Global agents                 | `~/.config/opencode/agent(s)/<name>.md`                                                                                   |
 | Project commands              | `.codark/command/<name>.md` or `.codark/commands/<name>.md`                                                           |

@@ -202,6 +202,8 @@ export async function requestDeviceCode(options: XaiAuthPluginOptions = {}): Pro
     body: new URLSearchParams({
       client_id: CLIENT_ID,
       scope: SCOPE,
+      // 协议标识跟随上游取值，xAI 侧按此识别/放行，勿改成品牌名
+      referrer: "opencode",
     }).toString(),
   })
   if (!response.ok) {

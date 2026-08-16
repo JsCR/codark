@@ -21,6 +21,7 @@ await Bun.build({
   external: ["jsonc-parser", "@lydell/node-pty"],
   define: {
     CODARK_MODELS_DEV: generated.modelsData,
+    CODARK_VERSION: `'${Script.version}'`,
     CODARK_CHANNEL: `'${Script.channel}'`,
   },
   files: {

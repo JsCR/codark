@@ -1,9 +1,9 @@
 import { TextareaRenderable, TextAttributes } from "@opentui/core"
 import { useTheme } from "../context/theme"
-import { useTuiConfig } from "../config"
 import { useDialog, type DialogContext } from "./dialog"
 import { createStore } from "solid-js/store"
 import { onMount, Show } from "solid-js"
+import { useTuiConfig } from "../config"
 import { useBindings } from "../keymap"
 
 export type DialogExportOptionsProps = {
@@ -118,7 +118,7 @@ export function DialogExportOptions(props: DialogExportOptionsProps) {
           textColor={theme.text}
           focusedTextColor={theme.text}
           cursorColor={theme.text}
-          cursorStyle={{ style: tuiConfig.cursor_shape, blinking: true }}
+          cursorStyle={tuiConfig.cursor}
         />
       </box>
       <box flexDirection="column">
