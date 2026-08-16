@@ -31,7 +31,7 @@ codegraph sync /data/dev/codark
 ## 索引维护（本仓库的实战教训）
 
 - **索引会滞后**：改动多时用 `codegraph sync` 增量同步；结构大改后 `codegraph init` 重建。
-- **"database disk image is malformed"**：根因是多个 codegraph 版本/进程共享同一个 SQLite db（官方 [issue #1057](https://github.com/colbymchenry/codegraph/issues/1057)）。处理：清掉持有旧句柄的 stale serve 进程让宿主重拉，再删库 `codegraph init` 重建——不要一上来就删库。
+- **"database disk image is malformed"**：根因是多个 codegraph 版本/进程共享同一个 SQLite db（官方 [issue #1057](https://github.com/colbymchenry/codegraph/issues/1057)）。处理：清掉持有旧句柄的 stale serve 进程让宿主重拉，再删库 `codegraph init` 重建——不要一上来就删库。**已有每日 04:17 系统 cron 自动清理跨天 stale 进程**（`/root/.local/bin/clean-codeintel-stale.sh`，同时覆盖 codebase-memory-mcp，2026-08-09 起）。
 - **版本统一**：本机有 npm 全局（v0.9.9）与版本管理器（v0.9.8/v0.9.9/v1.0.1）多套 codegraph，CLI 统一用 `/root/.local/bin/codegraph`（v1.0.1，与 MCP 服务同版），避免混写 db。
 
 ## 使用约定
